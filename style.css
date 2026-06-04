@@ -323,17 +323,18 @@ body {
   line-height: 0.96;
   letter-spacing: -0.035em;
   margin-bottom: 32px;
+  overflow: hidden;   /* safety net for very narrow viewports */
 }
 .hero-name-first {
   display: block;
-  font-size: clamp(64px, 12vw, 144px);
+  font-size: clamp(10vw, 12vw, 144px);
   font-weight: 300;
   color: var(--text-dark);
   opacity: 0.35;   /* very faint — Lando's thin/light split */
 }
 .hero-name-last {
   display: block;
-  font-size: clamp(64px, 12vw, 144px);
+  font-size: clamp(10vw, 12vw, 144px);
   font-weight: 800;
   color: var(--text-dark);
 }
