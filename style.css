@@ -53,7 +53,6 @@ a { text-decoration: none; color: inherit; }
 /* ── BASE ── */
 html {
   overflow-x: hidden; /* iOS Safari needs this on html, not just body */
-  max-width: 100%;
 }
 body {
   font-family: 'Inter', -apple-system, sans-serif;
@@ -61,7 +60,7 @@ body {
   color: var(--text-dark);
   line-height: 1.6;
   overflow-x: hidden;
-  max-width: 100%;
+  position: relative; /* helps iOS Safari respect overflow-x boundary */
 }
 
 /* Selection matches brand — lime on dark (LN signature) */
@@ -456,7 +455,7 @@ body {
 ══════════════════════════════════════════════════ */
 #statement {
   background: var(--dark-forest);
-  padding: var(--pad-section) var(--pad-h);
+  padding: var(--pad-section) 0;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -579,7 +578,7 @@ body {
 ══════════════════════════════════════════════════ */
 #work {
   background: var(--cream);
-  padding: var(--pad-section) var(--pad-h);
+  padding: var(--pad-section) 0;
 }
 
 .section-header {
@@ -834,7 +833,7 @@ body {
 ══════════════════════════════════════════════════ */
 #process {
   background: var(--dark-forest);
-  padding: var(--pad-section) var(--pad-h);
+  padding: var(--pad-section) 0;
   color: var(--text-light);
 }
 
@@ -943,7 +942,7 @@ body {
 ══════════════════════════════════════════════════ */
 #about {
   background: var(--cream);
-  padding: var(--pad-section) var(--pad-h);
+  padding: var(--pad-section) 0;
 }
 
 .about-grid {
@@ -1018,7 +1017,7 @@ body {
 #contact {
   background: var(--dark);
   color: var(--text-light);
-  padding: var(--pad-section) var(--pad-h) 48px;
+  padding: var(--pad-section) 0 48px;
   text-align: center;
 }
 
