@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Case Study: Flo AI — Spendflo's first AI assistant. Task completion time cut by 60%. Feature adoption up 45%.">
+  <title>Flo AI | Manoj Shakar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="site-nav" class="nav-dark">
+    <a href="index.html" class="nav-logo">MS</a>
+    <ul class="nav-links">
+      <li><a href="index.html#work">Work</a></li>
+      <li><a href="index.html#process">Approach</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <a href="index.html#contact" class="btn btn-filled">Let's Talk</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="cs-hero" data-theme="dark">
+    <div class="cs-hero-inner">
+      <a href="index.html#work" class="cs-back">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+        Back to Work
+      </a>
+
+      <div class="cs-hero-meta">
+        <span class="cs-badge accent">Spendflo</span>
+        <span class="cs-badge">AI / LLM UX</span>
+        <span class="cs-badge">Conversational Design</span>
+        <span class="cs-badge">2024</span>
+      </div>
+
+      <h1 class="cs-title">Flo — Spendflo's<br>First AI Assistant</h1>
+      <p class="cs-subtitle">Designing the UX for an AI-powered spend assistant that understands intent, executes complex workflows, and reduces task completion time by 60% — without a single tutorial.</p>
+
+      <div class="cs-stats-row">
+        <div class="cs-stat">
+          <span class="cs-stat-label">Timeline</span>
+          <span class="cs-stat-value">4 Weeks</span>
+        </div>
+        <div class="cs-stat">
+          <span class="cs-stat-label">My Role</span>
+          <span class="cs-stat-value">Design Lead</span>
+        </div>
+        <div class="cs-stat">
+          <span class="cs-stat-label">Task Time</span>
+          <span class="cs-stat-value">↓60%</span>
+        </div>
+        <div class="cs-stat">
+          <span class="cs-stat-label">Feature Adoption</span>
+          <span class="cs-stat-value">↑45%</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTEXT -->
+  <section class="cs-section" data-theme="light">
+    <div class="cs-section-inner cs-two-col">
+      <div>
+        <p class="cs-section-label">The Opportunity</p>
+        <h2 class="cs-section-title">Complex workflows.<br>Natural language.</h2>
+        <p class="cs-body">
+          Spendflo's core workflows — vendor renewal tracking, contract reviews, budget reallocation requests, and spend analysis — require navigating multiple modules, filtering data tables, and triggering multi-step approval flows. For finance leads managing 50+ vendors, this was a daily grind.
+        </p>
+        <p class="cs-body">
+          The LLM-powered opportunity was clear: if Flo could understand "Renew Salesforce contract for next year at the same terms" and execute it end-to-end, we could eliminate 80% of the clicks for the most common power-user tasks.
+        </p>
+      </div>
+      <div>
+        <p class="cs-section-label">The Design Challenge</p>
+        <h2 class="cs-section-title">AI UX is a new design language</h2>
+        <p class="cs-body">
+          Unlike traditional UI, an AI assistant has no fixed interaction model. Users don't know what's possible, commands fail unpredictably, and the line between "the AI understood me" and "the AI did something wrong" is blurry. Designing Flo required building a new design grammar from scratch.
+        </p>
+        <p class="cs-body">
+          My primary design challenge: how do you design an interface that feels <em>capable</em> without feeling <em>magical</em>? Users needed to trust Flo's actions, understand its limitations, and maintain a sense of control at every step.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- DESIGN PRINCIPLES -->
+  <section class="cs-section" data-theme="dark" style="padding-top:0;">
+    <div class="cs-section-inner">
+      <p class="cs-section-label">Design Principles for AI UX</p>
+      <h2 class="cs-section-title">Built on three guardrails</h2>
+
+      <div class="cs-problem-grid">
+        <div class="cs-problem-card">
+          <div class="cs-problem-num">01</div>
+          <h3 class="cs-problem-title">Transparent intent</h3>
+          <p class="cs-problem-desc">Flo always shows what it understood before it executes. A confirmation step — "I'll renew the Salesforce contract for $48,000. Confirm?" — builds trust and prevents costly errors. No silent actions.</p>
+        </div>
+        <div class="cs-problem-card">
+          <div class="cs-problem-num">02</div>
+          <h3 class="cs-problem-title">Graceful failure</h3>
+          <p class="cs-problem-desc">When Flo doesn't understand or lacks permissions, it says so clearly and suggests the manual path. "I can't edit that contract directly, but here's the link to do it in 2 clicks." No dead ends.</p>
+        </div>
+        <div class="cs-problem-card">
+          <div class="cs-problem-num">03</div>
+          <h3 class="cs-problem-title">Progressive capability discovery</h3>
+          <p class="cs-problem-desc">Flo surfaces what it can do contextually — on the Vendors page it suggests vendor-specific prompts; on Budgets it surfaces spend queries. Users discover capabilities through use, not documentation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="cs-section" data-theme="light">
+    <div class="cs-section-inner">
+      <p class="cs-section-label">Design Process</p>
+      <h2 class="cs-section-title">Prompt engineering meets product design</h2>
+
+      <div class="cs-steps">
+        <div class="cs-step">
+          <span class="cs-step-num">01</span>
+          <div>
+            <h3 class="cs-step-title">Use-Case Prioritisation Workshop</h3>
+            <p class="cs-step-desc">Facilitated a 2-hour workshop with PM, Engineering, and Customer Success to map the 30 most common power-user tasks. Scored each against frequency, time cost, and AI feasibility. Selected the top 8 use cases for V1 — the ones with the highest ROI if automated.</p>
+          </div>
+        </div>
+        <div class="cs-step">
+          <span class="cs-step-num">02</span>
+          <div>
+            <h3 class="cs-step-title">Conversation Flow Mapping</h3>
+            <p class="cs-step-desc">For each of the 8 use cases, mapped the full conversation flow: user intent → Flo's interpretation → confirmation state → execution → result. This wasn't wireframing — it was screenwriting. Every edge case (ambiguous input, partial match, permission error) needed a scripted response.</p>
+          </div>
+        </div>
+        <div class="cs-step">
+          <span class="cs-step-num">03</span>
+          <div>
+            <h3 class="cs-step-title">Prototype + Wizard of Oz Testing</h3>
+            <p class="cs-step-desc">Built a Figma prototype simulating Flo's responses. Ran "Wizard of Oz" testing: users typed natural language prompts; I manually triggered the right responses to simulate AI behaviour. This let us test conversation design before any LLM integration. Found 14 edge cases we hadn't designed for.</p>
+          </div>
+        </div>
+        <div class="cs-step">
+          <span class="cs-step-num">04</span>
+          <div>
+            <h3 class="cs-step-title">Interface Design — The Flo Overlay</h3>
+            <p class="cs-step-desc">Designed Flo as a persistent overlay (not a modal or sidebar) accessible from anywhere in the app via Cmd+K. The overlay shows the current context (which page you're on), recent actions, and a suggested prompts rail. The conversation UI distinguishes between user messages, Flo's reasoning, and Flo's actions.</p>
+          </div>
+        </div>
+        <div class="cs-step">
+          <span class="cs-step-num">05</span>
+          <div>
+            <h3 class="cs-step-title">Prompt Engineering Collaboration</h3>
+            <p class="cs-step-desc">Worked directly with the ML engineer to write and test system prompts. My role: ensure Flo's outputs were well-structured for the UI, that tone was professional but not robotic, and that error states had enough context for users to self-recover. Ran 200+ test prompts across all use cases.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERACTION DETAILS -->
+  <section class="cs-section" data-theme="dark" style="padding-top:0;">
+    <div class="cs-section-inner">
+      <p class="cs-section-label">Key Design Decision</p>
+      <h2 class="cs-section-title">The confirmation layer that built trust</h2>
+      <p class="cs-body" style="color:var(--text-light-muted); max-width:700px; margin-bottom:32px;">
+        The single most debated design decision was whether to add a confirmation step before execution. The AI team wanted one-shot execution for speed. I pushed for explicit confirmation.
+      </p>
+      <div class="cs-quote">
+        <p class="cs-quote-text">"The confirmation step cut abandonment by 34%. Users trusted Flo because they could see what it was about to do before it did it."</p>
+        <p class="cs-quote-source">— Post-launch data, 30 days after Flo V1 launch</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- OUTCOMES -->
+  <section class="cs-section" data-theme="light">
+    <div class="cs-section-inner">
+      <p class="cs-section-label">Outcomes</p>
+      <h2 class="cs-section-title">Flo became the most-used<br>feature in 30 days</h2>
+
+      <div class="cs-outcomes">
+        <div class="cs-outcome-card">
+          <div class="cs-outcome-num">↓60%</div>
+          <div class="cs-outcome-label">Task completion time vs. legacy manual flow</div>
+        </div>
+        <div class="cs-outcome-card">
+          <div class="cs-outcome-num">↑45%</div>
+          <div class="cs-outcome-label">Adoption of features surfaced by Flo in first session</div>
+        </div>
+        <div class="cs-outcome-card">
+          <div class="cs-outcome-num">↑30%</div>
+          <div class="cs-outcome-label">Daily active engagement with Flo after week 2</div>
+        </div>
+        <div class="cs-outcome-card">
+          <div class="cs-outcome-num">82%</div>
+          <div class="cs-outcome-label">Users reported Flo "understood what I meant" in post-launch survey</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LEARNINGS -->
+  <section class="cs-section" data-theme="light" style="padding-top:0;">
+    <div class="cs-section-inner" style="max-width:740px;">
+      <p class="cs-section-label">Strategic Lens</p>
+      <h2 class="cs-section-title">AI UX is product strategy</h2>
+      <p class="cs-body">
+        Designing Flo taught me that AI features aren't UX additions — they're <strong>product strategy decisions</strong>. The question isn't "how should this interface look?" but "what should the AI be allowed to do autonomously, and where should it defer to the human?" That's a business and ethics question as much as a design question.
+      </p>
+      <p class="cs-body">
+        The most important skill I brought to this project was facilitation: getting engineering, product, legal, and CS aligned on capability boundaries before a single prompt was written. Without that alignment, the AI would have been over-scoped and the UX would have been built on false promises.
+      </p>
+    </div>
+  </section>
+
+  <!-- NEXT -->
+  <section class="cs-next" data-theme="dark">
+    <div class="container" style="text-align:center;">
+      <p class="cs-next-label">Next Case Study</p>
+      <h2 class="cs-next-title">One Design System.<br>Infinite Scale.</h2>
+      <a href="casestudy-design-system.html" class="btn btn-filled">Read Case Study</a>
+    </div>
+  </section>
+
+  <script>
+    const nav = document.getElementById('site-nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('nav-scrolled', window.scrollY > 40);
+    }, { passive: true });
+
+    const reveals = document.querySelectorAll('.cs-step, .cs-problem-card, .cs-outcome-card, .cs-quote');
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in-view'); io.unobserve(e.target); } });
+    }, { threshold: 0.1 });
+    reveals.forEach(r => { r.classList.add('reveal'); io.observe(r); });
+  </script>
+
+</body>
+</html>

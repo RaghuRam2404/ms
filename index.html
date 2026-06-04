@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Manoj Shakar — Lead Product Designer with 6+ years designing SaaS products, AI experiences, and design systems. Strategy first. Craft always.">
+  <meta property="og:title" content="Manoj Shakar — Lead Product Designer">
+  <meta property="og:description" content="Strategy-first designer who turns complex products into intuitive experiences. Spendflo · Freshworks · Vajro · Trimble.">
+  <meta property="og:type" content="website">
+  <title>Manoj Shakar — Lead Product Designer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ── NAVIGATION ── -->
+  <nav id="site-nav">
+    <a href="/" class="nav-logo">MS</a>
+    <ul class="nav-links">
+      <li><a href="#work">Work</a></li>
+      <li><a href="#process">Approach</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <a href="#contact" class="btn btn-filled">Let's Talk</a>
+      <button class="nav-hamburger" id="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav Drawer -->
+  <div class="nav-drawer" id="nav-drawer">
+    <a href="#work" onclick="closeDrawer()">Work</a>
+    <a href="#process" onclick="closeDrawer()">Approach</a>
+    <a href="#about" onclick="closeDrawer()">About</a>
+    <a href="#contact" onclick="closeDrawer()">Contact</a>
+  </div>
+
+
+  <!-- ── HERO ── -->
+  <section id="hero" data-theme="light">
+    <div class="hero-inner">
+
+      <div class="hero-title reveal">Lead Product Designer · Head of Design</div>
+
+      <h1 class="hero-name reveal delay-1">
+        <span class="hero-name-first">Manoj</span>
+        <span class="hero-name-last">Shakar</span>
+      </h1>
+
+      <p class="hero-tagline reveal delay-2">
+        I turn <strong>complex products</strong> into intuitive experiences.<br>
+        Strategy first. Craft always.
+      </p>
+
+      <div class="hero-companies reveal delay-3">
+        <span>Currently at</span>
+        <span class="company-pill">Spendflo</span>
+        <span class="company-pill">Freshworks</span>
+        <span class="company-pill">Vajro</span>
+        <span class="company-pill">Trimble</span>
+      </div>
+
+      <div class="hero-ctas reveal delay-4">
+        <a href="#work" class="btn btn-outline">View Work</a>
+        <a href="#contact" class="btn btn-filled">Let's Talk</a>
+      </div>
+
+    </div>
+
+    <div class="scroll-hint" aria-hidden="true">
+      <span>Scroll</span>
+      <div class="scroll-mouse"></div>
+    </div>
+  </section>
+
+
+  <!-- ── WORK ── -->
+  <section id="work" data-theme="light">
+    <div class="container">
+
+      <div class="section-header">
+        <div>
+          <p class="eyebrow accent reveal">Selected Work</p>
+          <h2 class="headline-lg reveal delay-1">Work that<br>ships.</h2>
+        </div>
+        <div class="section-header-right">
+          <p class="section-header-desc reveal delay-2">
+            End-to-end product design across SaaS, AI, and design systems. Every case study shows the problem, the thinking, and the outcome.
+          </p>
+        </div>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Card 1: Journey Builder (FEATURED) -->
+        <a href="casestudy-journey-builder.html" class="project-card project-card--featured reveal">
+          <div class="card-body">
+            <div class="card-tags">
+              <span class="card-company">Freshworks</span>
+              <span class="card-divider"></span>
+              <span class="card-category">Marketing Automation</span>
+              <span class="card-featured-badge">Featured</span>
+            </div>
+            <h3 class="card-title">From Clutter<br>to Clarity</h3>
+            <p class="card-desc">UX-driven redesign of Journey Builder — improved node discoverability, modernised the canvas UI, and reduced cognitive load for 10,000+ users.</p>
+            <div class="card-meta">
+              <div class="card-meta-item">
+                <span class="card-meta-label">Timeline</span>
+                <span class="card-meta-value">2 weeks</span>
+              </div>
+              <div class="card-meta-item">
+                <span class="card-meta-label">Role</span>
+                <span class="card-meta-value">Solo Designer</span>
+              </div>
+              <div class="card-meta-item">
+                <span class="card-meta-label">Platform</span>
+                <span class="card-meta-value">Web App</span>
+              </div>
+            </div>
+            <div class="card-cta">
+              View Case Study
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </div>
+          </div>
+          <div class="card-metric-panel">
+            <div class="card-metric-num">↓42%</div>
+            <div class="card-metric-label">Time to first<br>automation node</div>
+          </div>
+        </a>
+
+        <!-- Card 2: Spendflo Settings (FEATURED) -->
+        <a href="casestudy-settings.html" class="project-card project-card--featured reveal delay-1">
+          <div class="card-body">
+            <div class="card-tags">
+              <span class="card-company">Spendflo</span>
+              <span class="card-divider"></span>
+              <span class="card-category">SaaS Platform</span>
+              <span class="card-featured-badge">Featured</span>
+            </div>
+            <h3 class="card-title">+37%<br>Adoption</h3>
+            <p class="card-desc">Complete revamp of Spendflo's Settings page — from a cluttered config panel to a scalable control hub. Surfaced the right controls at the right time.</p>
+            <div class="card-meta">
+              <div class="card-meta-item">
+                <span class="card-meta-label">Timeline</span>
+                <span class="card-meta-value">6 weeks</span>
+              </div>
+              <div class="card-meta-item">
+                <span class="card-meta-label">Role</span>
+                <span class="card-meta-value">End-to-End Designer</span>
+              </div>
+              <div class="card-meta-item">
+                <span class="card-meta-label">Platform</span>
+                <span class="card-meta-value">Web App</span>
+              </div>
+            </div>
+            <div class="card-cta">
+              View Case Study
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </div>
+          </div>
+          <div class="card-metric-panel">
+            <div class="card-metric-num">↑37%</div>
+            <div class="card-metric-label">Settings adoption<br>increase post-launch</div>
+          </div>
+        </a>
+
+        <!-- Card 3: Flo AI -->
+        <a href="casestudy-flo-ai.html" class="project-card reveal delay-2">
+          <div class="card-tags">
+            <span class="card-company">Spendflo</span>
+            <span class="card-divider"></span>
+            <span class="card-category">AI · Conversational UX</span>
+          </div>
+          <h3 class="card-title">Task Time<br>↓60%</h3>
+          <p class="card-desc">Designed Flo — Spendflo's first AI assistant — transforming complex spend workflows into natural conversation. Zero learning curve, maximum intent.</p>
+          <div class="card-impact">
+            <div class="card-impact-num">↓60%</div>
+            <div class="card-impact-label">Task completion time<br>with Flo vs. legacy UI</div>
+          </div>
+          <div class="card-meta">
+            <div class="card-meta-item">
+              <span class="card-meta-label">Timeline</span>
+              <span class="card-meta-value">4 weeks</span>
+            </div>
+            <div class="card-meta-item">
+              <span class="card-meta-label">Role</span>
+              <span class="card-meta-value">Design Lead</span>
+            </div>
+            <div class="card-meta-item">
+              <span class="card-meta-label">Platform</span>
+              <span class="card-meta-value">Web · AI</span>
+            </div>
+          </div>
+          <div class="card-cta">
+            View Case Study
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </div>
+        </a>
+
+        <!-- Card 4: Design System -->
+        <a href="casestudy-design-system.html" class="project-card reveal delay-3">
+          <div class="card-tags">
+            <span class="card-company">Vajro</span>
+            <span class="card-divider"></span>
+            <span class="card-category">Design Systems</span>
+          </div>
+          <h3 class="card-title">One System.<br>Infinite Scale.</h3>
+          <p class="card-desc">Built Vajro's first centralised design system — unified components, design tokens, and documentation that cut dev handoff time by 40%.</p>
+          <div class="card-impact">
+            <div class="card-impact-num">↑40%</div>
+            <div class="card-impact-label">Faster dev handoff<br>after system adoption</div>
+          </div>
+          <div class="card-meta">
+            <div class="card-meta-item">
+              <span class="card-meta-label">Timeline</span>
+              <span class="card-meta-value">6 weeks</span>
+            </div>
+            <div class="card-meta-item">
+              <span class="card-meta-label">Role</span>
+              <span class="card-meta-value">Design System Owner</span>
+            </div>
+            <div class="card-meta-item">
+              <span class="card-meta-label">Platform</span>
+              <span class="card-meta-value">Multi-platform</span>
+            </div>
+          </div>
+          <div class="card-cta">
+            View Case Study
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ── STATEMENT + MARQUEE ── -->
+  <section id="statement" data-theme="forest">
+
+    <blockquote class="statement-quote reveal">
+      "Design without <span class="accent-word">business context</span><br>is just decoration."
+    </blockquote>
+    <p class="statement-author reveal delay-1">— Manoj Shakar</p>
+
+    <div class="marquee-wrapper">
+      <div class="marquee-track">
+        <!-- Content duplicated for seamless loop -->
+        <div class="marquee-content">
+          <div class="marquee-item">
+            <span class="marquee-dot"></span>
+            <span>Task Completion <span class="metric">↓60%</span></span>
+          </div>
+          <div class="marquee-item">
+            <span class="marquee-dot"></span>
+            <span>Feature Adoption <span class="metric">↑45%</span></span>
+          </div>
+          <div class="marquee-item">
+            <span class="marquee-dot"></span>
+            <span>Settings Adoption <span class="metric">↑37%</span></span>
+          </div>
+          <div class="marquee-item">
+            <span class="marquee-dot"></span>
+            <span>Handoff Speed <span class="metric">↑40%</span></span>
+          </div>
+          <div class="marquee-item">
+            <span class="marquee-dot"></span>
+            <span>Engagement <span class="metric">↑30%</span></span>
+          </div>
+          <div class="marquee-item">
+            <span class="marquee-dot"></span>
+            <span><span class="metric">4</span> Companies</span>
+          </div>
+          <div class="marquee-item">
+            <span class="marquee-dot"></span>
+            <span><span class="metric">8+</span> Products</span>
+          </div>
+          <div class="marquee-item">
+            <span class="marquee-dot"></span>
+            <span><span class="metric">6+</span> Years</span>
+          </div>
+        </div>
+        <!-- Duplicate for seamless loop -->
+        <div class="marquee-content" aria-hidden="true">
+          <div class="marquee-item">
+            <span class="marquee-dot"></span>
+            <span>Task Completion <span class="metric">↓60%</span></span>
+          </div>
+          <div class="marquee-item">
+            <span class="marquee-dot"></span>
+            <span>Feature Adoption <span class="metric">↑45%</span></span>
+          </div>
+          <div class="marquee-item">
+            <span class="marquee-dot"></span>
+            <span>Settings Adoption <span class="metric">↑37%</span></span>
+          </div>
+          <div class="marquee-item">
+            <span class="marquee-dot"></span>
+            <span>Handoff Speed <span class="metric">↑40%</span></span>
+          </div>
+          <div class="marquee-item">
+            <span class="marquee-dot"></span>
+            <span>Engagement <span class="metric">↑30%</span></span>
+          </div>
+          <div class="marquee-item">
+            <span class="marquee-dot"></span>
+            <span><span class="metric">4</span> Companies</span>
+          </div>
+          <div class="marquee-item">
+            <span class="marquee-dot"></span>
+            <span><span class="metric">8+</span> Products</span>
+          </div>
+          <div class="marquee-item">
+            <span class="marquee-dot"></span>
+            <span><span class="metric">6+</span> Years</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- ── IMPACT STATS ── -->
+  <section id="impact" data-theme="dark">
+    <div class="container">
+      <div class="impact-grid">
+        <div class="impact-stat reveal">
+          <div class="impact-num">↓60%</div>
+          <div class="impact-label">Task Completion<br>Time (Flo AI)</div>
+        </div>
+        <div class="impact-stat reveal delay-1">
+          <div class="impact-num">↑45%</div>
+          <div class="impact-label">Feature Adoption<br>(Flo AI)</div>
+        </div>
+        <div class="impact-stat reveal delay-2">
+          <div class="impact-num">↑37%</div>
+          <div class="impact-label">Settings Adoption<br>(Spendflo)</div>
+        </div>
+        <div class="impact-stat reveal delay-3">
+          <div class="impact-num">↑40%</div>
+          <div class="impact-label">Handoff Speed<br>(Vajro DS)</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ── PROCESS ── -->
+  <section id="process" data-theme="forest">
+    <div class="container">
+
+      <div class="process-intro">
+        <p class="eyebrow reveal" style="color:var(--text-light-muted);margin-bottom:16px;">Approach</p>
+        <h2 class="headline-lg reveal delay-1" style="color:var(--text-light);">How I think.</h2>
+      </div>
+
+      <div class="process-grid">
+
+        <div class="process-pillar reveal">
+          <div class="process-num">01</div>
+          <h3 class="process-title">Business First</h3>
+          <p class="process-desc">
+            Every design decision maps to a business objective. I start by understanding the product's commercial model, user acquisition funnel, and retention levers before opening Figma.
+          </p>
+          <div class="process-tags">
+            <span class="process-tag">Stakeholder Alignment</span>
+            <span class="process-tag">OKR Mapping</span>
+            <span class="process-tag">ROI Thinking</span>
+          </div>
+        </div>
+
+        <div class="process-pillar reveal delay-1">
+          <div class="process-num">02</div>
+          <h3 class="process-title">Research-Driven</h3>
+          <p class="process-desc">
+            I derive use cases from user behaviour, not assumptions. Interviews, analytics, heuristic audits, and competitive teardowns inform every problem definition.
+          </p>
+          <div class="process-tags">
+            <span class="process-tag">User Interviews</span>
+            <span class="process-tag">Analytics</span>
+            <span class="process-tag">Jobs-to-be-Done</span>
+          </div>
+        </div>
+
+        <div class="process-pillar reveal delay-2">
+          <div class="process-num">03</div>
+          <h3 class="process-title">Craft &amp; Ship</h3>
+          <p class="process-desc">
+            Pixel-perfect is the floor, not the ceiling. Clean components, well-documented tokens, developer-ready specs — designed to be built, not just admired.
+          </p>
+          <div class="process-tags">
+            <span class="process-tag">Figma</span>
+            <span class="process-tag">Design Systems</span>
+            <span class="process-tag">Prototyping</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ── ABOUT ── -->
+  <section id="about" data-theme="light">
+    <div class="container">
+      <div class="about-grid">
+
+        <div class="about-left">
+          <p class="eyebrow accent reveal" style="margin-bottom:16px;">About</p>
+          <h2 class="about-tagline reveal delay-1">
+            Designer.<br>
+            Strategist.<br>
+            <span class="line-accent">Problem solver.</span>
+          </h2>
+          <p class="about-body reveal delay-2">
+            I'm a Lead Product Designer with 6+ years working across SaaS platforms, AI-driven products, and design systems. I've shipped products used by <strong>10,000+ teams</strong> across Freshworks, Spendflo, Vajro, and Trimble.
+          </p>
+          <p class="about-body reveal delay-3">
+            What sets me apart: I think in systems and business models. Before designing a single screen, I map the stakeholder landscape, identify the highest-value problem, and define what success looks like in measurable terms.
+          </p>
+          <p class="about-body reveal delay-3">
+            I'm interested in Head of Design or Senior Product Design roles where I can drive design strategy, mentor designers, and own the full design lifecycle — from 0→1 to scale.
+          </p>
+          <div class="about-ctas reveal delay-4">
+            <a href="#contact" class="btn btn-filled">Get in Touch</a>
+            <a href="https://www.linkedin.com/in/manoj-shakar-257235142/" target="_blank" rel="noopener" class="btn btn-outline">LinkedIn</a>
+          </div>
+        </div>
+
+        <div class="about-right reveal delay-2">
+          <div class="experience-list">
+
+            <div class="exp-item">
+              <span class="exp-index">01</span>
+              <div>
+                <h3 class="exp-company">Spendflo</h3>
+                <p class="exp-role">Lead Product Designer</p>
+                <p class="exp-period">2022 — Present</p>
+              </div>
+            </div>
+
+            <div class="exp-item">
+              <span class="exp-index">02</span>
+              <div>
+                <h3 class="exp-company">Freshworks</h3>
+                <p class="exp-role">Product Designer</p>
+                <p class="exp-period">2021 — 2022</p>
+              </div>
+            </div>
+
+            <div class="exp-item">
+              <span class="exp-index">03</span>
+              <div>
+                <h3 class="exp-company">Vajro</h3>
+                <p class="exp-role">Senior UX Designer</p>
+                <p class="exp-period">2019 — 2021</p>
+              </div>
+            </div>
+
+            <div class="exp-item">
+              <span class="exp-index">04</span>
+              <div>
+                <h3 class="exp-company">Trimble</h3>
+                <p class="exp-role">UX Designer</p>
+                <p class="exp-period">2018 — 2019</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ── CONTACT ── -->
+  <footer id="contact" data-theme="dark">
+    <div class="container">
+
+      <h2 class="contact-declaration reveal">
+        Let's build<br>
+        something <span class="word-accent">great.</span>
+      </h2>
+      <p class="contact-sub reveal delay-1">
+        Open to Head of Design and Senior Product Design roles. Let's have a conversation.
+      </p>
+
+      <div class="contact-links reveal delay-2">
+        <div class="contact-link-group">
+          <span class="contact-link-label">Email</span>
+          <a href="mailto:manojshakar.com@gmail.com" class="contact-link-value">manojshakar.com@gmail.com</a>
+        </div>
+        <div class="contact-link-group">
+          <span class="contact-link-label">Phone</span>
+          <a href="tel:+919994448205" class="contact-link-value">(+91) 999 444 8205</a>
+        </div>
+      </div>
+
+      <div class="social-row reveal delay-3">
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/manoj-shakar-257235142/" target="_blank" rel="noopener" class="social-btn" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/>
+            <circle cx="4" cy="4" r="2"/>
+          </svg>
+        </a>
+        <!-- Dribbble -->
+        <a href="https://dribbble.com/manojshakar" target="_blank" rel="noopener" class="social-btn" aria-label="Dribbble">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-8.94 0-2.58.92-5.01 2.86-7.44 6.32"/>
+          </svg>
+        </a>
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/manoj.designs/" target="_blank" rel="noopener" class="social-btn" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+          </svg>
+        </a>
+      </div>
+
+      <div class="footer-bottom">
+        <span class="footer-legal">© 2024 Manoj Shakar. All rights reserved.</span>
+        <span class="footer-made">Designed with <span class="accent">intent</span>. Built with care.</span>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- ── JAVASCRIPT ── -->
+  <script>
+    // ── NAV SCROLL STATE ──
+    const nav = document.getElementById('site-nav');
+    const sections = document.querySelectorAll('[data-theme]');
+
+    function updateNav() {
+      const scrolled = window.scrollY > 40;
+      nav.classList.toggle('nav-scrolled', scrolled);
+
+      // Detect if current section is dark
+      let currentTheme = 'light';
+      sections.forEach(s => {
+        const rect = s.getBoundingClientRect();
+        if (rect.top <= 0 && rect.bottom > 0) {
+          currentTheme = s.dataset.theme;
+        }
+      });
+      nav.classList.toggle('nav-dark', currentTheme === 'dark');
+    }
+    window.addEventListener('scroll', updateNav, { passive: true });
+    updateNav();
+
+    // ── MOBILE DRAWER ──
+    const toggle = document.getElementById('nav-toggle');
+    const drawer = document.getElementById('nav-drawer');
+    toggle.addEventListener('click', () => {
+      drawer.classList.toggle('open');
+    });
+    function closeDrawer() { drawer.classList.remove('open'); }
+    document.querySelectorAll('.nav-drawer a').forEach(a => a.addEventListener('click', closeDrawer));
+
+    // ── SCROLL REVEAL ──
+    const reveals = document.querySelectorAll('.reveal');
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('in-view'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.12 });
+    reveals.forEach(r => io.observe(r));
+
+    // ── SMOOTH SCROLL ──
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          closeDrawer();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
