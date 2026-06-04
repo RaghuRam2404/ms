@@ -53,6 +53,7 @@ a { text-decoration: none; color: inherit; }
 /* ── BASE ── */
 html {
   overflow-x: hidden; /* iOS Safari needs this on html, not just body */
+  max-width: 100%;
 }
 body {
   font-family: 'Inter', -apple-system, sans-serif;
@@ -60,6 +61,7 @@ body {
   color: var(--text-dark);
   line-height: 1.6;
   overflow-x: hidden;
+  max-width: 100%;
 }
 
 /* Selection matches brand — lime on dark (LN signature) */
@@ -458,6 +460,9 @@ body {
   text-align: center;
   position: relative;
   overflow: hidden;
+  /* force compositing layer so overflow:hidden clips marquee on iOS Safari */
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
 }
 
 /* Organic blob texture on dark-forest (LN dark sections) */
@@ -502,9 +507,14 @@ body {
 .marquee-wrapper {
   overflow: hidden;
   position: relative;
+  width: 100%;
+  max-width: 100%;
   padding: 32px 0;
   border-top: 1px solid var(--border-dark);
   border-bottom: 1px solid var(--border-dark);
+  /* iOS Safari compositing fix */
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
 }
 .marquee-wrapper::before,
 .marquee-wrapper::after {
