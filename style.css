@@ -51,6 +51,9 @@ a { text-decoration: none; color: inherit; }
 }
 
 /* ── BASE ── */
+html {
+  overflow-x: hidden; /* iOS Safari needs this on html, not just body */
+}
 body {
   font-family: 'Inter', -apple-system, sans-serif;
   background: var(--cream);
@@ -310,6 +313,7 @@ body {
 .hero-inner {
   position: relative;
   z-index: 1;
+  width: 100%;           /* prevent overflow from inline-flex children */
   max-width: 960px;
 }
 
@@ -335,8 +339,10 @@ body {
 }
 
 .hero-title {
-  display: inline-flex;
+  display: flex;
   align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 10px;
   font-size: 13px;
   font-weight: 600;
@@ -344,6 +350,7 @@ body {
   text-transform: uppercase;
   color: var(--accent);
   margin-bottom: 24px;
+  max-width: 100%;
 }
 .hero-title::before,
 .hero-title::after {
@@ -1424,7 +1431,7 @@ body {
 }
 
 @media (max-width: 480px) {
-  .impact-grid { grid-template-columns: 1fr 1fr; }
+  .impact-grid { grid-template-columns: 1fr; }
   .hero-companies { flex-direction: column; align-items: center; }
 
   .cs-problem-grid { grid-template-columns: 1fr; }
