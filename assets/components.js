@@ -12,5 +12,5 @@ async function loadPartial(url, placeholderId) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  loadPartial('/partials/footer.html', 'footer-placeholder');
+  loadPartial('partials/footer.html', 'footer-placeholder');
 });
