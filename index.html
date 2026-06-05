@@ -1,592 +1,655 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Manoj Shakar — Lead Product Designer with 6+ years designing SaaS products, AI experiences, and design systems. Strategy first. Craft always.">
-  <meta property="og:title" content="Manoj Shakar — Lead Product Designer">
-  <meta property="og:description" content="Strategy-first designer who turns complex products into intuitive experiences. Spendflo · Freshworks · Vajro · Trimble.">
-  <meta property="og:type" content="website">
-  <title>Manoj Shakar — Lead Product Designer</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manoj Shakar — AI-Native Lead Product Designer</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
 
-  <!-- ── NAVIGATION ── -->
-  <nav id="site-nav">
-    <a href="/" class="nav-logo">MS</a>
-    <ul class="nav-links">
-      <li><a href="#work">Work</a></li>
-      <li><a href="#process">Approach</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#contact">Contact</a></li>
+  <!-- ═══════════════════════════════════════════
+       NAV
+  ═══════════════════════════════════════════ -->
+  <nav class="nav">
+    <a href="/" class="nav__logo">
+      <img src="assets/logo.svg" alt="Manoj Shakar" class="nav__logo-img" />
+    </a>
+    <ul class="nav__links">
+      <li><a href="/" class="nav__link nav__link--active">Home</a></li>
+      <li><a href="./about.html" class="nav__link">About</a></li>
+      <li><a href="craft.html" class="nav__link">Craft</a></li>
     </ul>
-    <div class="nav-right">
-      <a href="#contact" class="btn btn-filled">Let's Talk</a>
-      <button class="nav-hamburger" id="nav-toggle" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
   </nav>
 
-  <!-- Mobile Nav Drawer -->
-  <div class="nav-drawer" id="nav-drawer">
-    <a href="#work" onclick="closeDrawer()">Work</a>
-    <a href="#process" onclick="closeDrawer()">Approach</a>
-    <a href="#about" onclick="closeDrawer()">About</a>
-    <a href="#contact" onclick="closeDrawer()">Contact</a>
-  </div>
+  <main>
 
-
-  <!-- ── HERO ── -->
-  <section id="hero" data-theme="light">
-    <div class="hero-inner">
-
-      <div class="hero-title reveal">Lead Product Designer · Head of Design</div>
-
-      <h1 class="hero-name reveal delay-1">
-        <span class="hero-name-first">Manoj</span>
-        <span class="hero-name-last">Shakar</span>
-      </h1>
-
-      <p class="hero-tagline reveal delay-2">
-        I turn <strong>complex products</strong> into intuitive experiences.<br>
-        Strategy first. Craft always.
-      </p>
-
-      <div class="hero-companies reveal delay-3">
-        <span>Currently at</span>
-        <span class="company-pill">Spendflo</span>
-        <span class="company-pill">Freshworks</span>
-        <span class="company-pill">Vajro</span>
-        <span class="company-pill">Trimble</span>
-      </div>
-
-      <div class="hero-ctas reveal delay-4">
-        <a href="#work" class="btn btn-outline">View Work</a>
-        <a href="#contact" class="btn btn-filled">Let's Talk</a>
-      </div>
-
-    </div>
-
-    <div class="scroll-hint" aria-hidden="true">
-      <span>Scroll</span>
-      <div class="scroll-mouse"></div>
-    </div>
-  </section>
-
-
-  <!-- ── WORK ── -->
-  <section id="work" data-theme="light">
-    <div class="container">
-
-      <div class="section-header">
-        <div>
-          <p class="eyebrow accent reveal">Selected Work</p>
-          <h2 class="headline-lg reveal delay-1">Work that<br>ships.</h2>
+    <!-- ═══════════════════════════════════════════
+         HERO
+    ═══════════════════════════════════════════ -->
+    <section class="hero section">
+      <div class="container">
+        <div class="hero__badge">
+          <span class="hero__badge-dot"></span>
+          OPEN TO THE RIGHT OPPORTUNITY
         </div>
-        <div class="section-header-right">
-          <p class="section-header-desc reveal delay-2">
-            End-to-end product design across SaaS, AI, and design systems. Every case study shows the problem, the thinking, and the outcome.
-          </p>
+
+        <h1 class="hero__heading">
+          I turn complex Problems into<br />
+          products people <em class="hero__heading-accent">actually</em> use
+        </h1>
+
+        <p class="hero__meta">
+          AI-Native Lead Product Designer &nbsp;·&nbsp; B2B SaaS &nbsp;·&nbsp; 10+ Years
+        </p>
+
+        <p class="hero__bio">
+          <strong>Hello, I'm Manoj Shakar.</strong> A Lead product designer with 10+ years shaping AI-powered and enterprise SaaS products. I've built Flo AI from 0 to 1, transformed entire platforms, led design teams, and driven measurable business outcomes. From reducing churn to improving adoption by 35%. I work best at the intersection of strategic direction and hands-on execution.
+        </p>
+
+        <div class="hero__cta">
+          <a href="#" class="btn btn--primary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download CV
+          </a>
+          <a href="#work" class="btn btn--ghost">View Case Study ↓</a>
         </div>
       </div>
+    </section>
 
-      <div class="projects-grid">
+    <!-- ═══════════════════════════════════════════
+         LOGOS
+    ═══════════════════════════════════════════ -->
+    <section class="logos section">
+      <div class="container">
+        <p class="section__label">HAD THE PRIVILEGE TO WORK WITH</p>
+        <div class="logos__grid">
+          <img src="assets/spendflo.png" alt="Spendflo" class="logos__item" />
+          <img src="assets/freshworks.png" alt="Freshworks" class="logos__item" />
+          <img src="assets/vajro.png" alt="Vajro" class="logos__item" />
+          <img src="assets/trimble.png" alt="Trimble" class="logos__item" />
+        </div>
+      </div>
+    </section>
 
-        <!-- Card 1: Journey Builder (FEATURED) -->
-        <a href="casestudy-journey-builder.html" class="project-card project-card--featured reveal">
-          <div class="card-body">
-            <div class="card-tags">
-              <span class="card-company">Freshworks</span>
-              <span class="card-divider"></span>
-              <span class="card-category">Marketing Automation</span>
-              <span class="card-featured-badge">Featured</span>
+    <!-- ═══════════════════════════════════════════
+         DESIGN PHILOSOPHY
+    ═══════════════════════════════════════════ -->
+    <section class="philosophy section" id="philosophy">
+      <div class="container">
+        <p class="section__label">DESIGN PHILOSOPHY</p>
+        <h2 class="section__heading">Six things I've learned<br />the hard way</h2>
+
+        <div class="cards-grid cards-grid--3">
+
+          <article class="card">
+            <div class="card__icon">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_3853_1485)">
+                <path d="M18.333 19.9997C18.333 20.4417 18.5086 20.8656 18.8212 21.1782C19.1337 21.4907 19.5576 21.6663 19.9997 21.6663C20.4417 21.6663 20.8656 21.4907 21.1782 21.1782C21.4907 20.8656 21.6663 20.4417 21.6663 19.9997C21.6663 19.5576 21.4907 19.1337 21.1782 18.8212C20.8656 18.5086 20.4417 18.333 19.9997 18.333C19.5576 18.333 19.1337 18.5086 18.8212 18.8212C18.5086 19.1337 18.333 19.5576 18.333 19.9997Z" stroke="#333333" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M20.0003 11.667C18.3522 11.667 16.741 12.1557 15.3706 13.0714C14.0002 13.9871 12.9321 15.2886 12.3013 16.8113C11.6706 18.334 11.5056 20.0096 11.8271 21.6261C12.1487 23.2426 12.9423 24.7274 14.1078 25.8929C15.2732 27.0583 16.7581 27.852 18.3746 28.1735C19.9911 28.4951 21.6666 28.3301 23.1894 27.6993C24.7121 27.0686 26.0136 26.0005 26.9292 24.6301C27.8449 23.2597 28.3337 21.6485 28.3337 20.0003" stroke="#333333" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M21.6665 5.09158C18.5766 4.74493 15.4553 5.36704 12.7345 6.87186C10.0136 8.37668 7.82762 10.6898 6.47888 13.4913C5.13014 16.2929 4.6853 19.4443 5.20592 22.5096C5.72653 25.575 7.18685 28.4029 9.38488 30.602C11.5829 32.8011 14.41 34.2629 17.4751 34.785C20.5402 35.3072 23.6919 34.8639 26.4941 33.5166C29.2963 32.1693 31.6105 29.9844 33.1167 27.2643C34.6229 24.5442 35.2466 21.4233 34.9015 18.3332" stroke="#333333" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M25 10V15H30L35 10H30V5L25 10Z" stroke="#333333" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M25 15L20 20" stroke="#333333" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_3853_1485">
+                <rect width="40" height="40" fill="white"/>
+                </clipPath>
+                </defs>
+                </svg>
+
             </div>
-            <h3 class="card-title">From Clutter<br>to Clarity</h3>
-            <p class="card-desc">UX-driven redesign of Journey Builder — improved node discoverability, modernised the canvas UI, and reduced cognitive load for 10,000+ users.</p>
-            <div class="card-meta">
-              <div class="card-meta-item">
-                <span class="card-meta-label">Timeline</span>
-                <span class="card-meta-value">2 weeks</span>
+            <h3 class="card__title">Design that doesn't move a number is just art</h3>
+            <p class="card__body">Every design decision I make connects back to a business outcome — adoption, retention, efficiency, or churn. Aesthetics serve strategy, not the other way around.</p>
+            <a href="#" class="card__link">35% adoption at Spendflo post-AI redesign</a>
+          </article>
+
+          <article class="card">
+            <div class="card__icon">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_3856_1575)">
+                <path d="M5 16.6667C5 14.8986 5.70238 13.2029 6.95262 11.9526C8.20286 10.7024 9.89856 10 11.6667 10H28.3333C30.1014 10 31.7971 10.7024 33.0474 11.9526C34.2976 13.2029 35 14.8986 35 16.6667V26.6667C35 28.4348 34.2976 30.1305 33.0474 31.3807C31.7971 32.631 30.1014 33.3333 28.3333 33.3333H11.6667C9.89856 33.3333 8.20286 32.631 6.95262 31.3807C5.70238 30.1305 5 28.4348 5 26.6667V16.6667Z" stroke="#333333" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M13.333 5L16.6663 10" stroke="#333333" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M26.6663 5L23.333 10" stroke="#333333" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M15 21.6663V18.333" stroke="#333333" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M25 18.333V21.6663" stroke="#333333" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_3856_1575">
+                <rect width="40" height="40" fill="white"/>
+                </clipPath>
+                </defs>
+                </svg>
+
+            </div>
+            <h3 class="card__title">AI must earn user trust. It can't demand it.</h3>
+            <p class="card__body">Intelligence without transparency creates friction. Every AI feature needs explainability, confidence signals, and a clear way out. I've shipped this, not just theorised about it.</p>
+            <a href="#" class="card__link">Built Flo AI from 0→1 at Spendflo</a>
+          </article>
+
+          <article class="card">
+            <div class="card__icon">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_3853_1514)">
+                <path d="M20.0003 6.66699L6.66699 13.3337L20.0003 20.0003L33.3337 13.3337L20.0003 6.66699Z" stroke="#333333" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M6.66699 20L20.0003 26.6667L33.3337 20" stroke="#333333" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M6.66699 26.667L20.0003 33.3337L33.3337 26.667" stroke="#333333" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_3853_1514">
+                <rect width="40" height="40" fill="white"/>
+                </clipPath>
+                </defs>
+                </svg>
+
+            </div>
+            <h3 class="card__title">Systems beat heroics every single time</h3>
+            <p class="card__body">Scalable design systems and repeatable processes outlast individual brilliance. I've built design systems at 2 companies, because the foundation is what makes the team faster.</p>
+            <a href="#" class="card__link">Lotus at Spendflo · Needle at Vajro</a>
+          </article>
+
+          <article class="card">
+            <div class="card__icon">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_3853_1534)">
+                <path d="M11.667 20.0003L20.0003 28.3337L36.667 11.667" stroke="#333333" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M3.33301 20.0003L11.6663 28.3337M19.9997 20.0003L28.333 11.667" stroke="#333333" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_3853_1534">
+                <rect width="40" height="40" fill="white"/>
+                </clipPath>
+                </defs>
+                </svg>
+
+            </div>
+            <h3 class="card__title">The right problem is more valuable than a clever solution</h3>
+            <p class="card__body">At Vajro, the 64% onboarding improvement didn't come from a redesign. It came from identifying 6 steps nobody had questioned in years. Diagnosis before prescription.</p>
+            <a href="#" class="card__link">64% onboarding completion</a>
+          </article>
+
+          <article class="card">
+            <div class="card__icon">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_3853_1539)">
+                <path d="M5 15.0003C5 14.1163 5.35119 13.2684 5.97631 12.6433C6.60143 12.0182 7.44928 11.667 8.33333 11.667H31.6667C32.5507 11.667 33.3986 12.0182 34.0237 12.6433C34.6488 13.2684 35 14.1163 35 15.0003V30.0003C35 30.8844 34.6488 31.7322 34.0237 32.3573C33.3986 32.9825 32.5507 33.3337 31.6667 33.3337H8.33333C7.44928 33.3337 6.60143 32.9825 5.97631 32.3573C5.35119 31.7322 5 30.8844 5 30.0003V15.0003Z" stroke="#333333" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M13.333 11.6667V8.33333C13.333 7.44928 13.6842 6.60143 14.3093 5.97631C14.9344 5.35119 15.7823 5 16.6663 5H23.333C24.2171 5 25.0649 5.35119 25.69 5.97631C26.3152 6.60143 26.6663 7.44928 26.6663 8.33333V11.6667" stroke="#333333" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M20 20V20.0167" stroke="#333333" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M5 21.667C9.65263 24.0115 14.79 25.2327 20 25.2327C25.21 25.2327 30.3474 24.0115 35 21.667" stroke="#333333" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_3853_1539">
+                <rect width="40" height="40" fill="white"/>
+                </clipPath>
+                </defs>
+                </svg>
+
+            </div>
+            <h3 class="card__title">Designers who understand revenue make better decisions</h3>
+            <p class="card__body">If you don't know what moves the business needle, you can't prioritise the right problems. I engage with roadmap, growth metrics, and churn data, not just design briefs.</p>
+            <a href="#" class="card__link">Influenced product roadmap at Spendflo</a>
+          </article>
+
+          <article class="card">
+            <div class="card__icon">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_3853_1546)">
+                <path d="M5 28.3337L15 18.3337L21.6667 25.0003L35 11.667" stroke="#333333" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M23.333 11.667H34.9997V23.3337" stroke="#333333" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_3853_1546">
+                <rect width="40" height="40" fill="white"/>
+                </clipPath>
+                </defs>
+                </svg>
+
+            </div>
+            <h3 class="card__title">Scale changes everything about how you should design</h3>
+            <p class="card__body">At 50,000+ users, one wrong pattern costs you thousands of support tickets. At 500 enterprise customers, one confused workflow costs a renewal. Scale demands a different kind of precision.</p>
+            <a href="#" class="card__link">50K users impacted · 60% support reduction</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         DESIGN PROCESS
+    ═══════════════════════════════════════════ -->
+    <section class="process section" id="process">
+      <div class="container">
+        <p class="section__label">DESIGN PROCESS</p>
+        <h2 class="section__heading">From ambiguous problem<br />to shipped product</h2>
+        <p class="process__intro">My process is not a waterfall. It's a loop. I move between research, decision-making, and execution iteratively, always keeping the business outcome visible at every step.</p>
+
+        <ol class="process__steps">
+          <li class="process__step">
+            <div class="process__step-number">1</div>
+            <div class="process__step-content">
+              <h3 class="process__step-title">Discover: Understand the business problem, not just the design brief</h3>
+              <p class="process__step-body">Stakeholder interviews, usage analytics, CS support tickets, and user research. I look for the gap between what the business thinks users want and what users actually do. The insight that changed Spendflo's direction: users didn't want a better dashboard, they wanted answers.</p>
+            </div>
+          </li>
+          <li class="process__step">
+            <div class="process__step-number">2</div>
+            <div class="process__step-content">
+              <h3 class="process__step-title">Frame: Define the right problem before designing anything</h3>
+              <p class="process__step-body">I turn research into a crisp problem statement and success criteria. "How might we help procurement teams trust AI recommendations enough to change their daily workflows?" is more useful than "redesign the dashboard." This framing guides every decision that follows.</p>
+            </div>
+          </li>
+          <li class="process__step">
+            <div class="process__step-number">3</div>
+            <div class="process__step-content">
+              <h3 class="process__step-title">Design: Make decisions, not deliverables</h3>
+              <p class="process__step-body">Wireframes and prototypes are decision-making tools, not deliverables. Every screen answers a question: what does the user need to see here? What should they feel confident doing? For AI features, I always design for the moment the AI is wrong, not just when it's right.</p>
+            </div>
+          </li>
+          <li class="process__step">
+            <div class="process__step-number">4</div>
+            <div class="process__step-content">
+              <h3 class="process__step-title">Validate: Test with real users before engineering builds</h3>
+              <p class="process__step-body">Usability testing, stakeholder reviews, and data review before a single line of code is written. I look for hesitation, confusion, and unexpected workarounds. Those are the signals. At Vajro, testing revealed the 6 redundant steps that nobody had questioned before.</p>
+            </div>
+          </li>
+          <li class="process__step">
+            <div class="process__step-number">5</div>
+            <div class="process__step-content">
+              <h3 class="process__step-title">Ship & measure: Design isn't done at handoff</h3>
+              <p class="process__step-body">I stay close to engineering during implementation, catch edge cases that weren't in the spec, and track the metric we set out to move. If adoption doesn't improve post-launch, I go back. The number is the signal, not the Figma file.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         PROFESSIONAL TRAITS
+    ═══════════════════════════════════════════ -->
+    <section class="traits section section--dark" id="traits">
+      <div class="container">
+        <p class="section__label">PROFESSIONAL TRAITS</p>
+        <h2 class="section__heading mb40">What you get when you<br />hire me</h2>
+
+        <div class="cards-grid cards-grid--4" >
+
+          <article class="card ">
+            <div class="card__icon">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M25.8333 21.667C24.2862 21.667 22.8025 22.2816 21.7085 23.3755C20.6146 24.4695 20 25.9532 20 27.5003V29.167C20 30.7141 20.6146 32.1978 21.7085 33.2918C22.8025 34.3857 24.2862 35.0003 25.8333 35.0003C27.3804 35.0003 28.8642 34.3857 29.9581 33.2918C31.0521 32.1978 31.6667 30.7141 31.6667 29.167V26.167" stroke="url(#paint0_linear_3856_1559)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M14.1663 21.667C15.7134 21.667 17.1972 22.2816 18.2911 23.3755C19.3851 24.4695 19.9997 25.9532 19.9997 27.5003V29.167C19.9997 30.7141 19.3851 32.1978 18.2911 33.2918C17.1972 34.3857 15.7134 35.0003 14.1663 35.0003C12.6192 35.0003 11.1355 34.3857 10.0416 33.2918C8.94759 32.1978 8.33301 30.7141 8.33301 29.167V26.167" stroke="url(#paint1_linear_3856_1559)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M29.1663 26.6667C30.7134 26.6667 32.1972 26.0521 33.2911 24.9581C34.3851 23.8642 34.9997 22.3804 34.9997 20.8333C34.9997 19.2862 34.3851 17.8025 33.2911 16.7085C32.1972 15.6146 30.7134 15 29.1663 15H28.333" stroke="url(#paint2_linear_3856_1559)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M31.6667 15.5V10.8333C31.6667 9.28624 31.0521 7.80251 29.9581 6.70854C28.8642 5.61458 27.3804 5 25.8333 5C24.2862 5 22.8025 5.61458 21.7085 6.70854C20.6146 7.80251 20 9.28624 20 10.8333" stroke="url(#paint3_linear_3856_1559)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M10.8333 26.6667C9.28624 26.6667 7.80251 26.0521 6.70854 24.9581C5.61458 23.8642 5 22.3804 5 20.8333C5 19.2862 5.61458 17.8025 6.70854 16.7085C7.80251 15.6146 9.28624 15 10.8333 15H11.6667" stroke="url(#paint4_linear_3856_1559)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M8.33301 15.5V10.8333C8.33301 9.28624 8.94759 7.80251 10.0416 6.70854C11.1355 5.61458 12.6192 5 14.1663 5C15.7134 5 17.1972 5.61458 18.2911 6.70854C19.3851 7.80251 19.9997 9.28624 19.9997 10.8333V27.5" stroke="url(#paint5_linear_3856_1559)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                <defs>
+                <linearGradient id="paint0_linear_3856_1559" x1="32.7273" y1="20.6064" x2="16.619" y2="34.9646" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#30FDE0"/>
+                <stop offset="1" stop-color="#A4F773"/>
+                </linearGradient>
+                <linearGradient id="paint1_linear_3856_1559" x1="21.0603" y1="20.6064" x2="4.95204" y2="34.9646" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#30FDE0"/>
+                <stop offset="1" stop-color="#A4F773"/>
+                </linearGradient>
+                <linearGradient id="paint2_linear_3856_1559" x1="35.6057" y1="14.072" x2="23.2683" y2="21.2537" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#30FDE0"/>
+                <stop offset="1" stop-color="#A4F773"/>
+                </linearGradient>
+                <linearGradient id="paint3_linear_3856_1559" x1="32.7273" y1="4.16477" x2="20.0554" y2="18.5078" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#30FDE0"/>
+                <stop offset="1" stop-color="#A4F773"/>
+                </linearGradient>
+                <linearGradient id="paint4_linear_3856_1559" x1="12.2727" y1="14.072" x2="-0.0647011" y2="21.2537" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#30FDE0"/>
+                <stop offset="1" stop-color="#A4F773"/>
+                </linearGradient>
+                <linearGradient id="paint5_linear_3856_1559" x1="21.0603" y1="3.21023" x2="-1.54045" y2="15.1482" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#30FDE0"/>
+                <stop offset="1" stop-color="#A4F773"/>
+                </linearGradient>
+                </defs>
+                </svg>
+
+            </div>
+            <p class="card__body">Strategic and hands-on. I don't choose between them.</p>
+          </article>
+
+          <article class="card ">
+            <div class="card__icon">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.5216 25.4791C12.4054 23.3629 9.63881 22.0202 6.66699 21.667C7.51631 20.1938 8.72728 18.9615 10.1854 18.0866C11.6436 17.2117 13.3008 16.7231 15.0003 16.667C15.9848 13.8685 17.777 11.4247 20.1503 9.64474C22.5236 7.86477 25.3714 6.82851 28.3337 6.66699C29.6597 6.66699 30.9315 7.19378 31.8692 8.13146C32.8069 9.06914 33.3337 10.3409 33.3337 11.667C33.1721 14.6292 32.1359 17.477 30.3559 19.8503C28.5759 22.2236 26.1322 24.0158 23.3337 25.0003C23.2775 26.6999 22.7889 28.3571 21.914 29.8152C21.0391 31.2734 19.8069 32.4843 18.3337 33.3337C17.9805 30.3618 16.6378 27.5952 14.5216 25.4791Z" stroke="url(#paint0_linear_3856_1583)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M11.6668 23.333C9.9322 24.3123 8.52957 25.7873 7.63874 27.569C6.74791 29.3506 6.40948 31.3577 6.66682 33.333C8.64208 33.5903 10.6492 33.2519 12.4309 32.3611C14.2125 31.4702 15.6875 30.0676 16.6668 28.333" stroke="url(#paint1_linear_3856_1583)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M23.333 14.9997C23.333 15.4417 23.5086 15.8656 23.8212 16.1782C24.1337 16.4907 24.5576 16.6663 24.9997 16.6663C25.4417 16.6663 25.8656 16.4907 26.1782 16.1782C26.4907 15.8656 26.6663 15.4417 26.6663 14.9997C26.6663 14.5576 26.4907 14.1337 26.1782 13.8212C25.8656 13.5086 25.4417 13.333 24.9997 13.333C24.5576 13.333 24.1337 13.5086 23.8212 13.8212C23.5086 14.1337 23.333 14.5576 23.333 14.9997Z" stroke="url(#paint2_linear_3856_1583)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                <defs>
+                <linearGradient id="paint0_linear_3856_1583" x1="35.7579" y1="4.54578" x2="3.33366" y2="37.5761" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#30FDE0"/>
+                <stop offset="1" stop-color="#A4F773"/>
+                </linearGradient>
+                <linearGradient id="paint1_linear_3856_1583" x1="17.5835" y1="22.5309" x2="5.32253" y2="35.0211" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#30FDE0"/>
+                <stop offset="1" stop-color="#A4F773"/>
+                </linearGradient>
+                <linearGradient id="paint2_linear_3856_1583" x1="26.9694" y1="13.0679" x2="22.9163" y2="17.1966" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#30FDE0"/>
+                <stop offset="1" stop-color="#A4F773"/>
+                </linearGradient>
+                </defs>
+                </svg>
+
+            </div>
+            <p class="card__body">0→1 builder. I've shipped AI products from scratch, not just iterated.</p>
+          </article>
+
+          <article class="card ">
+            <div class="card__icon">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 21.6667C5 21.2246 5.17559 20.8007 5.48816 20.4882C5.80072 20.1756 6.22464 20 6.66667 20H13.3333C13.7754 20 14.1993 20.1756 14.5118 20.4882C14.8244 20.8007 15 21.2246 15 21.6667V31.6667C15 32.1087 14.8244 32.5326 14.5118 32.8452C14.1993 33.1577 13.7754 33.3333 13.3333 33.3333H6.66667C6.22464 33.3333 5.80072 33.1577 5.48816 32.8452C5.17559 32.5326 5 32.1087 5 31.6667V21.6667Z" stroke="url(#paint0_linear_3856_1594)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M25 14.9997C25 14.5576 25.1756 14.1337 25.4882 13.8212C25.8007 13.5086 26.2246 13.333 26.6667 13.333H33.3333C33.7754 13.333 34.1993 13.5086 34.5118 13.8212C34.8244 14.1337 35 14.5576 35 14.9997V31.6663C35 32.1084 34.8244 32.5323 34.5118 32.8449C34.1993 33.1574 33.7754 33.333 33.3333 33.333H26.6667C26.2246 33.333 25.8007 33.1574 25.4882 32.8449C25.1756 32.5323 25 32.1084 25 31.6663V14.9997Z" stroke="url(#paint1_linear_3856_1594)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M15 8.33366C15 7.89163 15.1756 7.46771 15.4882 7.15515C15.8007 6.84259 16.2246 6.66699 16.6667 6.66699H23.3333C23.7754 6.66699 24.1993 6.84259 24.5118 7.15515C24.8244 7.46771 25 7.89163 25 8.33366V31.667C25 32.109 24.8244 32.5329 24.5118 32.8455C24.1993 33.1581 23.7754 33.3337 23.3333 33.3337H16.6667C16.2246 33.3337 15.8007 33.1581 15.4882 32.8455C15.1756 32.5329 15 32.109 15 31.667V8.33366Z" stroke="url(#paint2_linear_3856_1594)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M6.66699 33.333H30.0003" stroke="url(#paint3_linear_3856_1594)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                <defs>
+                <linearGradient id="paint0_linear_3856_1594" x1="15.9091" y1="18.9394" x2="0.264341" y2="30.8923" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#30FDE0"/>
+                <stop offset="1" stop-color="#A4F773"/>
+                </linearGradient>
+                <linearGradient id="paint1_linear_3856_1594" x1="35.9091" y1="11.7421" x2="16.236" y2="21.7625" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#30FDE0"/>
+                <stop offset="1" stop-color="#A4F773"/>
+                </linearGradient>
+                <linearGradient id="paint2_linear_3856_1594" x1="25.9091" y1="4.54578" x2="4.28739" y2="12.8055" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#30FDE0"/>
+                <stop offset="1" stop-color="#A4F773"/>
+                </linearGradient>
+                <linearGradient id="paint3_linear_3856_1594" x1="32.1215" y1="33.2535" x2="32.0194" y2="35.6814" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#30FDE0"/>
+                <stop offset="1" stop-color="#A4F773"/>
+                </linearGradient>
+                </defs>
+                </svg>
+
+            </div>
+            <p class="card__body">Metric-first. I design for the outcome, not the deliverable.</p>
+          </article>
+
+          <article class="card ">
+            <div class="card__icon">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.66699 13.333H13.3337V19.9997H6.66699V13.333Z" stroke="url(#paint0_linear_3856_1601)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M10 6.66699V13.3337" stroke="url(#paint1_linear_3856_1601)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M10 20V33.3333" stroke="url(#paint2_linear_3856_1601)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M16.667 23.333H23.3337V29.9997H16.667V23.333Z" stroke="url(#paint3_linear_3856_1601)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M20 6.66699V23.3337" stroke="url(#paint4_linear_3856_1601)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M20 30V33.3333" stroke="url(#paint5_linear_3856_1601)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M26.667 8.33301H33.3337V14.9997H26.667V8.33301Z" stroke="url(#paint6_linear_3856_1601)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M30 6.66699V8.33366" stroke="url(#paint7_linear_3856_1601)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M30 15V33.3333" stroke="url(#paint8_linear_3856_1601)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                <defs>
+                <linearGradient id="paint0_linear_3856_1601" x1="13.9397" y1="12.8027" x2="5.83366" y2="21.0603" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#30FDE0"/>
+                <stop offset="1" stop-color="#A4F773"/>
+                </linearGradient>
+                <linearGradient id="paint1_linear_3856_1601" x1="11.0909" y1="6.13669" x2="8.66974" y2="6.50665" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#30FDE0"/>
+                <stop offset="1" stop-color="#A4F773"/>
+                </linearGradient>
+                <linearGradient id="paint2_linear_3856_1601" x1="11.0909" y1="18.9394" x2="8.62759" y2="19.1276" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#30FDE0"/>
+                <stop offset="1" stop-color="#A4F773"/>
+                </linearGradient>
+                <linearGradient id="paint3_linear_3856_1601" x1="23.9397" y1="22.8027" x2="15.8337" y2="31.0603" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#30FDE0"/>
+                <stop offset="1" stop-color="#A4F773"/>
+                </linearGradient>
+                <linearGradient id="paint4_linear_3856_1601" x1="21.0909" y1="5.34124" x2="18.6224" y2="5.49211" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#30FDE0"/>
+                <stop offset="1" stop-color="#A4F773"/>
+                </linearGradient>
+                <linearGradient id="paint5_linear_3856_1601" x1="21.0909" y1="29.7348" x2="18.8249" y2="30.4274" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#30FDE0"/>
+                <stop offset="1" stop-color="#A4F773"/>
+                </linearGradient>
+                <linearGradient id="paint6_linear_3856_1601" x1="33.9397" y1="7.8027" x2="25.8337" y2="16.0603" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#30FDE0"/>
+                <stop offset="1" stop-color="#A4F773"/>
+                </linearGradient>
+                <linearGradient id="paint7_linear_3856_1601" x1="31.0909" y1="6.53442" x2="29.2871" y2="7.63694" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#30FDE0"/>
+                <stop offset="1" stop-color="#A4F773"/>
+                </linearGradient>
+                <linearGradient id="paint8_linear_3856_1601" x1="31.0909" y1="13.5417" x2="28.6208" y2="13.6789" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#30FDE0"/>
+                <stop offset="1" stop-color="#A4F773"/>
+                </linearGradient>
+                </defs>
+                </svg>
+
+            </div>
+            <p class="card__body">Design system builder. Token-based, scalable, adopted by engineers.</p>
+          </article>
+
+          <article class="card ">
+            <div class="card__icon">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M32.5002 20.9531L20.0002 33.3331L7.50018 20.9531C6.67569 20.1508 6.02625 19.1865 5.59276 18.1209C5.15926 17.0552 4.95111 15.9114 4.98141 14.7614C5.0117 13.6113 5.27978 12.48 5.76877 11.4387C6.25776 10.3974 6.95707 9.46856 7.82265 8.71077C8.68824 7.95298 9.70135 7.38262 10.7982 7.03561C11.895 6.68859 13.0519 6.57245 14.1958 6.69448C15.3397 6.8165 16.446 7.17407 17.445 7.74465C18.4439 8.31523 19.3139 9.08647 20.0002 10.0098C20.6894 9.09318 21.5604 8.32867 22.5587 7.76415C23.5569 7.19962 24.661 6.84722 25.8017 6.72901C26.9425 6.61079 28.0953 6.7293 29.1881 7.07713C30.281 7.42495 31.2902 7.9946 32.1528 8.75041C33.0153 9.50623 33.7126 10.4319 34.2009 11.4696C34.6892 12.5073 34.9581 13.6346 34.9907 14.781C35.0233 15.9274 34.8189 17.0681 34.3904 18.1319C33.9619 19.1957 33.3184 20.1595 32.5002 20.9631" stroke="url(#paint0_linear_3856_1620)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M19.9997 10L14.5114 15.4883C14.199 15.8009 14.0234 16.2247 14.0234 16.6667C14.0234 17.1086 14.199 17.5325 14.5114 17.845L15.4164 18.75C16.5664 19.9 18.4331 19.9 19.5831 18.75L21.2497 17.0833C22.2443 16.0888 23.5932 15.53 24.9997 15.53C26.4063 15.53 27.7552 16.0888 28.7497 17.0833L32.4997 20.8333" stroke="url(#paint1_linear_3856_1620)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M20.833 25.833L24.1663 29.1663" stroke="url(#paint2_linear_3856_1620)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M25 21.667L28.3333 25.0003" stroke="url(#paint3_linear_3856_1620)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                <defs>
+                <linearGradient id="paint0_linear_3856_1620" x1="37.7227" y1="4.52474" x2="5.56812" y2="41.3677" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#30FDE0"/>
+                <stop offset="1" stop-color="#A4F773"/>
+                </linearGradient>
+                <linearGradient id="paint1_linear_3856_1620" x1="34.1794" y1="9.13826" x2="22.7874" y2="28.9305" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#30FDE0"/>
+                <stop offset="1" stop-color="#A4F773"/>
+                </linearGradient>
+                <linearGradient id="paint2_linear_3856_1620" x1="24.4694" y1="25.5679" x2="20.4163" y2="29.6966" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#30FDE0"/>
+                <stop offset="1" stop-color="#A4F773"/>
+                </linearGradient>
+                <linearGradient id="paint3_linear_3856_1620" x1="28.6364" y1="21.4018" x2="24.5833" y2="25.5306" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#30FDE0"/>
+                <stop offset="1" stop-color="#A4F773"/>
+                </linearGradient>
+                </defs>
+                </svg>
+
+            </div>
+            <p class="card__body">Cross-functional. I can run a stakeholder workshop and a design critique.</p>
+          </article>
+
+          <article class="card ">
+            <div class="card__icon">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18.333 19.9997C18.333 20.4417 18.5086 20.8656 18.8212 21.1782C19.1337 21.4907 19.5576 21.6663 19.9997 21.6663C20.4417 21.6663 20.8656 21.4907 21.1782 21.1782C21.4907 20.8656 21.6663 20.4417 21.6663 19.9997C21.6663 19.5576 21.4907 19.1337 21.1782 18.8212C20.8656 18.5086 20.4417 18.333 19.9997 18.333C19.5576 18.333 19.1337 18.5086 18.8212 18.8212C18.5086 19.1337 18.333 19.5576 18.333 19.9997Z" stroke="url(#paint0_linear_3856_1612)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M20.0003 11.667C18.3522 11.667 16.741 12.1557 15.3706 13.0714C14.0002 13.9871 12.9321 15.2886 12.3013 16.8113C11.6706 18.334 11.5056 20.0096 11.8271 21.6261C12.1487 23.2426 12.9423 24.7274 14.1078 25.8929C15.2732 27.0583 16.7581 27.852 18.3746 28.1735C19.9911 28.4951 21.6666 28.3301 23.1894 27.6993C24.7121 27.0686 26.0136 26.0005 26.9292 24.6301C27.8449 23.2597 28.3337 21.6485 28.3337 20.0003" stroke="url(#paint1_linear_3856_1612)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M21.6665 5.09158C18.5766 4.74493 15.4553 5.36704 12.7345 6.87186C10.0136 8.37668 7.82762 10.6898 6.47888 13.4913C5.13014 16.2929 4.6853 19.4443 5.20592 22.5096C5.72653 25.575 7.18685 28.4029 9.38488 30.602C11.5829 32.8011 14.41 34.2629 17.4751 34.785C20.5402 35.3072 23.6919 34.8639 26.4941 33.5166C29.2963 32.1693 31.6105 29.9844 33.1167 27.2643C34.6229 24.5442 35.2466 21.4233 34.9015 18.3332" stroke="url(#paint2_linear_3856_1612)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M25 10V15H30L35 10H30V5L25 10Z" stroke="url(#paint3_linear_3856_1612)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M25 15L20 20" stroke="url(#paint4_linear_3856_1612)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                <defs>
+                <linearGradient id="paint0_linear_3856_1612" x1="21.9694" y1="18.0679" x2="17.9163" y2="22.1966" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#30FDE0"/>
+                <stop offset="1" stop-color="#A4F773"/>
+                </linearGradient>
+                <linearGradient id="paint1_linear_3856_1612" x1="29.8488" y1="10.3412" x2="9.58366" y2="30.9852" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#30FDE0"/>
+                <stop offset="1" stop-color="#A4F773"/>
+                </linearGradient>
+                <linearGradient id="paint2_linear_3856_1612" x1="37.7214" y1="2.61168" x2="1.24414" y2="39.7708" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#30FDE0"/>
+                <stop offset="1" stop-color="#A4F773"/>
+                </linearGradient>
+                <linearGradient id="paint3_linear_3856_1612" x1="35.9091" y1="4.20455" x2="23.75" y2="16.5909" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#30FDE0"/>
+                <stop offset="1" stop-color="#A4F773"/>
+                </linearGradient>
+                <linearGradient id="paint4_linear_3856_1612" x1="25.4545" y1="14.6023" x2="19.375" y2="20.7955" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#30FDE0"/>
+                <stop offset="1" stop-color="#A4F773"/>
+                </linearGradient>
+                </defs>
+                </svg>
+
+            </div>
+            <p class="card__body">Clear communicator. Design rationale, not design opinions.</p>
+          </article>
+
+          <article class="card ">
+            <div class="card__icon">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_3856_1629)">
+                <path d="M10.2856 16.3807C9.03539 15.1305 8.33301 13.4348 8.33301 11.6667C8.33301 9.89856 9.03539 8.20286 10.2856 6.95262C11.5359 5.70238 13.2316 5 14.9997 5C16.7678 5 18.4635 5.70238 19.7137 6.95262C20.964 8.20286 21.6663 9.89856 21.6663 11.6667C21.6663 13.4348 20.964 15.1305 19.7137 16.3807C18.4635 17.631 16.7678 18.3333 14.9997 18.3333C13.2316 18.3333 11.5359 17.631 10.2856 16.3807Z" stroke="url(#paint0_linear_3856_1629)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M5 35V31.6667C5 29.8986 5.70238 28.2029 6.95262 26.9526C8.20286 25.7024 9.89856 25 11.6667 25H18.3333C20.1014 25 21.7971 25.7024 23.0474 26.9526C24.2976 28.2029 25 29.8986 25 31.6667V35" stroke="url(#paint1_linear_3856_1629)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M26.667 5.2168C28.101 5.58397 29.3721 6.41797 30.2797 7.58731C31.1874 8.75666 31.6801 10.1948 31.6801 11.6751C31.6801 13.1554 31.1874 14.5936 30.2797 15.7629C29.3721 16.9323 28.101 17.7663 26.667 18.1335" stroke="url(#paint2_linear_3856_1629)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M35 35V31.6667C34.9915 30.1953 34.4965 28.768 33.5921 27.6073C32.6877 26.4467 31.4247 25.6178 30 25.25" stroke="url(#paint3_linear_3856_1629)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+                <defs>
+                <linearGradient id="paint0_linear_3856_1629" x1="22.8785" y1="3.93939" x2="6.66634" y2="20.4545" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#30FDE0"/>
+                <stop offset="1" stop-color="#A4F773"/>
+                </linearGradient>
+                <linearGradient id="paint1_linear_3856_1629" x1="26.8182" y1="24.2045" x2="17.1978" y2="43.805" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#30FDE0"/>
+                <stop offset="1" stop-color="#A4F773"/>
+                </linearGradient>
+                <linearGradient id="paint2_linear_3856_1629" x1="32.1358" y1="4.18934" x2="21.394" y2="8.43625" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#30FDE0"/>
+                <stop offset="1" stop-color="#A4F773"/>
+                </linearGradient>
+                <linearGradient id="paint3_linear_3856_1629" x1="35.4545" y1="24.4744" x2="25.7221" y2="29.5587" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#30FDE0"/>
+                <stop offset="1" stop-color="#A4F773"/>
+                </linearGradient>
+                <clipPath id="clip0_3856_1629">
+                <rect width="40" height="40" fill="white"/>
+                </clipPath>
+                </defs>
+                </svg>
+
+            </div>
+            <p class="card__body">Team multiplier. I raise the floor, not just my own ceiling.</p>
+          </article>
+
+          <article class="card ">
+            <div class="card__icon">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_3856_1626)">
+                <path d="M21.6663 5V16.6667H31.6663L18.333 35V23.3333H8.33301L21.6663 5Z" stroke="url(#paint0_linear_3856_1626)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+                <defs>
+                <linearGradient id="paint0_linear_3856_1626" x1="33.7876" y1="2.61364" x2="-1.72923" y2="30.7541" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#30FDE0"/>
+                <stop offset="1" stop-color="#A4F773"/>
+                </linearGradient>
+                <clipPath id="clip0_3856_1626">
+                <rect width="40" height="40" fill="white"/>
+                </clipPath>
+                </defs>
+                </svg>
+
+            </div>
+            <p class="card__body">Ambiguity doesn't slow me down. It's where the best problems live.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         RECENT WORK
+    ═══════════════════════════════════════════ -->
+    <section class="work section" id="work">
+      <div class="container">
+        <p class="section__label">RECENT WORK</p>
+        <h2 class="section__heading">My recent and past<br />accomplishments</h2>
+
+        <!-- Featured case study -->
+        <article class="work-card work-card--featured">
+          <div class="work-card__image">
+            <div class="work-card__image-placeholder"></div>
+          </div>
+          <div class="work-card__content">
+            <h3 class="work-card__title">Building Flo AI from 0 to 1, transforming a SaaS tool into an AI-native procurement platform.</h3>
+            <p class="work-card__desc">Transformed Spendflo from a SaaS management tool into a fully AI-native procurement platform covering intake-to-procure and procure-to-pay. Built Flo AI, the conversational AI procurement assistant, entirely from scratch. Defined AI interaction patterns, trust signals, explainability frameworks, and human-override flows.</p>
+            <div class="work-card__meta">
+              <div class="work-card__meta-item">
+                <span class="work-card__meta-label">Timeline</span>
+                <span class="work-card__meta-value">3 Months</span>
               </div>
-              <div class="card-meta-item">
-                <span class="card-meta-label">Role</span>
-                <span class="card-meta-value">Solo Designer</span>
+              <div class="work-card__meta-item">
+                <span class="work-card__meta-label">Role</span>
+                <span class="work-card__meta-value">Lead Product Designer</span>
               </div>
-              <div class="card-meta-item">
-                <span class="card-meta-label">Platform</span>
-                <span class="card-meta-value">Web App</span>
-              </div>
-            </div>
-            <div class="card-cta">
-              View Case Study
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </div>
-          </div>
-          <div class="card-metric-panel">
-            <div class="card-metric-num">↓42%</div>
-            <div class="card-metric-label">Time to first<br>automation node</div>
-          </div>
-        </a>
-
-        <!-- Card 2: Spendflo Settings (FEATURED) -->
-        <a href="casestudy-settings.html" class="project-card project-card--featured reveal delay-1">
-          <div class="card-body">
-            <div class="card-tags">
-              <span class="card-company">Spendflo</span>
-              <span class="card-divider"></span>
-              <span class="card-category">SaaS Platform</span>
-              <span class="card-featured-badge">Featured</span>
-            </div>
-            <h3 class="card-title">+37%<br>Adoption</h3>
-            <p class="card-desc">Complete revamp of Spendflo's Settings page — from a cluttered config panel to a scalable control hub. Surfaced the right controls at the right time.</p>
-            <div class="card-meta">
-              <div class="card-meta-item">
-                <span class="card-meta-label">Timeline</span>
-                <span class="card-meta-value">6 weeks</span>
-              </div>
-              <div class="card-meta-item">
-                <span class="card-meta-label">Role</span>
-                <span class="card-meta-value">End-to-End Designer</span>
-              </div>
-              <div class="card-meta-item">
-                <span class="card-meta-label">Platform</span>
-                <span class="card-meta-value">Web App</span>
+              <div class="work-card__meta-item">
+                <span class="work-card__meta-label">Impact</span>
+                <span class="work-card__meta-value">↓40% effort · ↑35% adoption</span>
               </div>
             </div>
-            <div class="card-cta">
-              View Case Study
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            <a href="#" class="work-card__cta">View Case Study →</a>
+          </div>
+        </article>
+
+        <!-- Case study grid -->
+        <div class="work-grid">
+
+          <article class="work-card">
+            <div class="work-card__image">
+              <div class="work-card__image-placeholder"></div>
             </div>
-          </div>
-          <div class="card-metric-panel">
-            <div class="card-metric-num">↑37%</div>
-            <div class="card-metric-label">Settings adoption<br>increase post-launch</div>
-          </div>
-        </a>
-
-        <!-- Card 3: Flo AI -->
-        <a href="casestudy-flo-ai.html" class="project-card reveal delay-2">
-          <div class="card-tags">
-            <span class="card-company">Spendflo</span>
-            <span class="card-divider"></span>
-            <span class="card-category">AI · Conversational UX</span>
-          </div>
-          <h3 class="card-title">Task Time<br>↓60%</h3>
-          <p class="card-desc">Designed Flo — Spendflo's first AI assistant — transforming complex spend workflows into natural conversation. Zero learning curve, maximum intent.</p>
-          <div class="card-impact">
-            <div class="card-impact-num">↓60%</div>
-            <div class="card-impact-label">Task completion time<br>with Flo vs. legacy UI</div>
-          </div>
-          <div class="card-meta">
-            <div class="card-meta-item">
-              <span class="card-meta-label">Timeline</span>
-              <span class="card-meta-value">4 weeks</span>
-            </div>
-            <div class="card-meta-item">
-              <span class="card-meta-label">Role</span>
-              <span class="card-meta-value">Design Lead</span>
-            </div>
-            <div class="card-meta-item">
-              <span class="card-meta-label">Platform</span>
-              <span class="card-meta-value">Web · AI</span>
-            </div>
-          </div>
-          <div class="card-cta">
-            View Case Study
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </div>
-        </a>
-
-        <!-- Card 4: Design System -->
-        <a href="casestudy-design-system.html" class="project-card reveal delay-3">
-          <div class="card-tags">
-            <span class="card-company">Vajro</span>
-            <span class="card-divider"></span>
-            <span class="card-category">Design Systems</span>
-          </div>
-          <h3 class="card-title">One System.<br>Infinite Scale.</h3>
-          <p class="card-desc">Built Vajro's first centralised design system — unified components, design tokens, and documentation that cut dev handoff time by 40%.</p>
-          <div class="card-impact">
-            <div class="card-impact-num">↑40%</div>
-            <div class="card-impact-label">Faster dev handoff<br>after system adoption</div>
-          </div>
-          <div class="card-meta">
-            <div class="card-meta-item">
-              <span class="card-meta-label">Timeline</span>
-              <span class="card-meta-value">6 weeks</span>
-            </div>
-            <div class="card-meta-item">
-              <span class="card-meta-label">Role</span>
-              <span class="card-meta-value">Design System Owner</span>
-            </div>
-            <div class="card-meta-item">
-              <span class="card-meta-label">Platform</span>
-              <span class="card-meta-value">Multi-platform</span>
-            </div>
-          </div>
-          <div class="card-cta">
-            View Case Study
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </div>
-        </a>
-
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ── STATEMENT + MARQUEE ── -->
-  <section id="statement" data-theme="forest">
-
-    <blockquote class="statement-quote reveal">
-      "Design without <span class="accent-word">business context</span><br>is just decoration."
-    </blockquote>
-    <p class="statement-author reveal delay-1">— Manoj Shakar</p>
-
-    <div class="marquee-wrapper">
-      <div class="marquee-track">
-        <!-- Content duplicated for seamless loop -->
-        <div class="marquee-content">
-          <div class="marquee-item">
-            <span class="marquee-dot"></span>
-            <span>Task Completion <span class="metric">↓60%</span></span>
-          </div>
-          <div class="marquee-item">
-            <span class="marquee-dot"></span>
-            <span>Feature Adoption <span class="metric">↑45%</span></span>
-          </div>
-          <div class="marquee-item">
-            <span class="marquee-dot"></span>
-            <span>Settings Adoption <span class="metric">↑37%</span></span>
-          </div>
-          <div class="marquee-item">
-            <span class="marquee-dot"></span>
-            <span>Handoff Speed <span class="metric">↑40%</span></span>
-          </div>
-          <div class="marquee-item">
-            <span class="marquee-dot"></span>
-            <span>Engagement <span class="metric">↑30%</span></span>
-          </div>
-          <div class="marquee-item">
-            <span class="marquee-dot"></span>
-            <span><span class="metric">4</span> Companies</span>
-          </div>
-          <div class="marquee-item">
-            <span class="marquee-dot"></span>
-            <span><span class="metric">8+</span> Products</span>
-          </div>
-          <div class="marquee-item">
-            <span class="marquee-dot"></span>
-            <span><span class="metric">6+</span> Years</span>
-          </div>
-        </div>
-        <!-- Duplicate for seamless loop -->
-        <div class="marquee-content" aria-hidden="true">
-          <div class="marquee-item">
-            <span class="marquee-dot"></span>
-            <span>Task Completion <span class="metric">↓60%</span></span>
-          </div>
-          <div class="marquee-item">
-            <span class="marquee-dot"></span>
-            <span>Feature Adoption <span class="metric">↑45%</span></span>
-          </div>
-          <div class="marquee-item">
-            <span class="marquee-dot"></span>
-            <span>Settings Adoption <span class="metric">↑37%</span></span>
-          </div>
-          <div class="marquee-item">
-            <span class="marquee-dot"></span>
-            <span>Handoff Speed <span class="metric">↑40%</span></span>
-          </div>
-          <div class="marquee-item">
-            <span class="marquee-dot"></span>
-            <span>Engagement <span class="metric">↑30%</span></span>
-          </div>
-          <div class="marquee-item">
-            <span class="marquee-dot"></span>
-            <span><span class="metric">4</span> Companies</span>
-          </div>
-          <div class="marquee-item">
-            <span class="marquee-dot"></span>
-            <span><span class="metric">8+</span> Products</span>
-          </div>
-          <div class="marquee-item">
-            <span class="marquee-dot"></span>
-            <span><span class="metric">6+</span> Years</span>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </section>
-
-
-  <!-- ── IMPACT STATS ── -->
-  <section id="impact" data-theme="dark">
-    <div class="container">
-      <div class="impact-grid">
-        <div class="impact-stat reveal">
-          <div class="impact-num">↓60%</div>
-          <div class="impact-label">Task Completion<br>Time (Flo AI)</div>
-        </div>
-        <div class="impact-stat reveal delay-1">
-          <div class="impact-num">↑45%</div>
-          <div class="impact-label">Feature Adoption<br>(Flo AI)</div>
-        </div>
-        <div class="impact-stat reveal delay-2">
-          <div class="impact-num">↑37%</div>
-          <div class="impact-label">Settings Adoption<br>(Spendflo)</div>
-        </div>
-        <div class="impact-stat reveal delay-3">
-          <div class="impact-num">↑40%</div>
-          <div class="impact-label">Handoff Speed<br>(Vajro DS)</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ── PROCESS ── -->
-  <section id="process" data-theme="forest">
-    <div class="container">
-
-      <div class="process-intro">
-        <p class="eyebrow reveal" style="color:var(--text-light-muted);margin-bottom:16px;">Approach</p>
-        <h2 class="headline-lg reveal delay-1" style="color:var(--text-light);">How I think.</h2>
-      </div>
-
-      <div class="process-grid">
-
-        <div class="process-pillar reveal">
-          <div class="process-num">01</div>
-          <h3 class="process-title">Business First</h3>
-          <p class="process-desc">
-            Every design decision maps to a business objective. I start by understanding the product's commercial model, user acquisition funnel, and retention levers before opening Figma.
-          </p>
-          <div class="process-tags">
-            <span class="process-tag">Stakeholder Alignment</span>
-            <span class="process-tag">OKR Mapping</span>
-            <span class="process-tag">ROI Thinking</span>
-          </div>
-        </div>
-
-        <div class="process-pillar reveal delay-1">
-          <div class="process-num">02</div>
-          <h3 class="process-title">Research-Driven</h3>
-          <p class="process-desc">
-            I derive use cases from user behaviour, not assumptions. Interviews, analytics, heuristic audits, and competitive teardowns inform every problem definition.
-          </p>
-          <div class="process-tags">
-            <span class="process-tag">User Interviews</span>
-            <span class="process-tag">Analytics</span>
-            <span class="process-tag">Jobs-to-be-Done</span>
-          </div>
-        </div>
-
-        <div class="process-pillar reveal delay-2">
-          <div class="process-num">03</div>
-          <h3 class="process-title">Craft &amp; Ship</h3>
-          <p class="process-desc">
-            Pixel-perfect is the floor, not the ceiling. Clean components, well-documented tokens, developer-ready specs — designed to be built, not just admired.
-          </p>
-          <div class="process-tags">
-            <span class="process-tag">Figma</span>
-            <span class="process-tag">Design Systems</span>
-            <span class="process-tag">Prototyping</span>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ── ABOUT ── -->
-  <section id="about" data-theme="light">
-    <div class="container">
-      <div class="about-grid">
-
-        <div class="about-left">
-          <p class="eyebrow accent reveal" style="margin-bottom:16px;">About</p>
-          <h2 class="about-tagline reveal delay-1">
-            Designer.<br>
-            Strategist.<br>
-            <span class="line-accent">Problem solver.</span>
-          </h2>
-          <p class="about-body reveal delay-2">
-            I'm a Lead Product Designer with 6+ years working across SaaS platforms, AI-driven products, and design systems. I've shipped products used by <strong>10,000+ teams</strong> across Freshworks, Spendflo, Vajro, and Trimble.
-          </p>
-          <p class="about-body reveal delay-3">
-            What sets me apart: I think in systems and business models. Before designing a single screen, I map the stakeholder landscape, identify the highest-value problem, and define what success looks like in measurable terms.
-          </p>
-          <p class="about-body reveal delay-3">
-            I'm interested in Head of Design or Senior Product Design roles where I can drive design strategy, mentor designers, and own the full design lifecycle — from 0→1 to scale.
-          </p>
-          <div class="about-ctas reveal delay-4">
-            <a href="#contact" class="btn btn-filled">Get in Touch</a>
-            <a href="https://www.linkedin.com/in/manoj-shakar-257235142/" target="_blank" rel="noopener" class="btn btn-outline">LinkedIn</a>
-          </div>
-        </div>
-
-        <div class="about-right reveal delay-2">
-          <div class="experience-list">
-
-            <div class="exp-item">
-              <span class="exp-index">01</span>
-              <div>
-                <h3 class="exp-company">Spendflo</h3>
-                <p class="exp-role">Lead Product Designer</p>
-                <p class="exp-period">2022 — Present</p>
+            <h3 class="work-card__title">Redesigning procurement workflows: from manual requests to intelligent automation</h3>
+            <p class="work-card__desc">Procurement teams were drowning in manual request handling and approval bottlenecks. Redesigned the end-to-end request and approval workflow, streamlining intake, automating routing, and surfacing the right information at the right moment to reduce friction across the entire procurement cycle.</p>
+            <div class="work-card__meta">
+              <div class="work-card__meta-item">
+                <span class="work-card__meta-label">Timeline</span>
+                <span class="work-card__meta-value">3 Months</span>
+              </div>
+              <div class="work-card__meta-item">
+                <span class="work-card__meta-label">Role</span>
+                <span class="work-card__meta-value">Lead Product Designer</span>
+              </div>
+              <div class="work-card__meta-item">
+                <span class="work-card__meta-label">Impact</span>
+                <span class="work-card__meta-value">↑35% feature adoption</span>
               </div>
             </div>
+            <a href="#" class="work-card__cta">View Case Study →</a>
+          </article>
 
-            <div class="exp-item">
-              <span class="exp-index">02</span>
-              <div>
-                <h3 class="exp-company">Freshworks</h3>
-                <p class="exp-role">Product Designer</p>
-                <p class="exp-period">2021 — 2022</p>
+          <article class="work-card">
+            <div class="work-card__image">
+              <div class="work-card__image-placeholder"></div>
+            </div>
+            <h3 class="work-card__title">From clutter to clarity: redesigning the social media campaign creation experience</h3>
+            <p class="work-card__desc">Freshworks marketers were spending too many clicks creating multi-platform campaigns. Redesigned the campaign creation workflow from scratch, simplified the flow, added live preview, and enabled multi-platform posting in a single interaction.</p>
+            <div class="work-card__meta">
+              <div class="work-card__meta-item">
+                <span class="work-card__meta-label">Timeline</span>
+                <span class="work-card__meta-value">1 Month</span>
+              </div>
+              <div class="work-card__meta-item">
+                <span class="work-card__meta-label">Role</span>
+                <span class="work-card__meta-value">Senior Product Designer</span>
+              </div>
+              <div class="work-card__meta-item">
+                <span class="work-card__meta-label">Impact</span>
+                <span class="work-card__meta-value">↑22% campaign performance</span>
               </div>
             </div>
+            <a href="#" class="work-card__cta">View Case Study →</a>
+          </article>
 
-            <div class="exp-item">
-              <span class="exp-index">03</span>
-              <div>
-                <h3 class="exp-company">Vajro</h3>
-                <p class="exp-role">Senior UX Designer</p>
-                <p class="exp-period">2019 — 2021</p>
-              </div>
-            </div>
-
-            <div class="exp-item">
-              <span class="exp-index">04</span>
-              <div>
-                <h3 class="exp-company">Trimble</h3>
-                <p class="exp-role">UX Designer</p>
-                <p class="exp-period">2018 — 2019</p>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ── CONTACT ── -->
-  <footer id="contact" data-theme="dark">
-    <div class="container">
-
-      <h2 class="contact-declaration reveal">
-        Let's build<br>
-        something <span class="word-accent">great.</span>
-      </h2>
-      <p class="contact-sub reveal delay-1">
-        Open to Head of Design and Senior Product Design roles. Let's have a conversation.
-      </p>
-
-      <div class="contact-links reveal delay-2">
-        <div class="contact-link-group">
-          <span class="contact-link-label">Email</span>
-          <a href="mailto:manojshakar.com@gmail.com" class="contact-link-value">manojshakar.com@gmail.com</a>
-        </div>
-        <div class="contact-link-group">
-          <span class="contact-link-label">Phone</span>
-          <a href="tel:+919994448205" class="contact-link-value">(+91) 999 444 8205</a>
         </div>
       </div>
+    </section>
 
-      <div class="social-row reveal delay-3">
-        <!-- LinkedIn -->
-        <a href="https://www.linkedin.com/in/manoj-shakar-257235142/" target="_blank" rel="noopener" class="social-btn" aria-label="LinkedIn">
-          <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/>
-            <circle cx="4" cy="4" r="2"/>
-          </svg>
-        </a>
-        <!-- Dribbble -->
-        <a href="https://dribbble.com/manojshakar" target="_blank" rel="noopener" class="social-btn" aria-label="Dribbble">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="12" cy="12" r="10"/>
-            <path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-8.94 0-2.58.92-5.01 2.86-7.44 6.32"/>
-          </svg>
-        </a>
-        <!-- Instagram -->
-        <a href="https://www.instagram.com/manoj.designs/" target="_blank" rel="noopener" class="social-btn" aria-label="Instagram">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
-            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
-            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
-          </svg>
-        </a>
-      </div>
+  </main>
 
-      <div class="footer-bottom">
-        <span class="footer-legal">© 2024 Manoj Shakar. All rights reserved.</span>
-        <span class="footer-made">Designed with <span class="accent">intent</span>. Built with care.</span>
-      </div>
+  <div id="footer-placeholder"></div>
 
-    </div>
-  </footer>
-
-
-  <!-- ── JAVASCRIPT ── -->
-  <script>
-    // ── NAV SCROLL STATE ──
-    const nav = document.getElementById('site-nav');
-    const sections = document.querySelectorAll('[data-theme]');
-
-    function updateNav() {
-      const scrolled = window.scrollY > 40;
-      nav.classList.toggle('nav-scrolled', scrolled);
-
-      // Detect if current section is dark
-      let currentTheme = 'light';
-      sections.forEach(s => {
-        const rect = s.getBoundingClientRect();
-        if (rect.top <= 0 && rect.bottom > 0) {
-          currentTheme = s.dataset.theme;
-        }
-      });
-      nav.classList.toggle('nav-dark', currentTheme === 'dark');
-    }
-    window.addEventListener('scroll', updateNav, { passive: true });
-    updateNav();
-
-    // ── MOBILE DRAWER ──
-    const toggle = document.getElementById('nav-toggle');
-    const drawer = document.getElementById('nav-drawer');
-    toggle.addEventListener('click', () => {
-      drawer.classList.toggle('open');
-    });
-    function closeDrawer() { drawer.classList.remove('open'); }
-    document.querySelectorAll('.nav-drawer a').forEach(a => a.addEventListener('click', closeDrawer));
-
-    // ── SCROLL REVEAL ──
-    const reveals = document.querySelectorAll('.reveal');
-    const io = new IntersectionObserver((entries) => {
-      entries.forEach(e => {
-        if (e.isIntersecting) { e.target.classList.add('in-view'); io.unobserve(e.target); }
-      });
-    }, { threshold: 0.05, rootMargin: '0px 0px -40px 0px' });
-    reveals.forEach(r => io.observe(r));
-
-    // ── SMOOTH SCROLL ──
-    document.querySelectorAll('a[href^="#"]').forEach(a => {
-      a.addEventListener('click', e => {
-        const target = document.querySelector(a.getAttribute('href'));
-        if (target) {
-          e.preventDefault();
-          closeDrawer();
-          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-      });
-    });
-  </script>
-
+  <script src="/assets/components.js"></script>
 </body>
 </html>
