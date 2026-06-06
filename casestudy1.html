@@ -757,26 +757,94 @@
       align-items: center;
     }
 
-    .cs-footer a { font-size: 13px; color: var(--g); text-decoration: none; font-weight: 500; }
-    .cs-footer-c { font-size: 12px; color: var(--k3); }
+    .cs-footer a { font-size: 13px; color: var(--g); text-decoration: none; font-weight: 500; white-space: nowrap; }
+    .cs-footer-c { font-size: 12px; color: var(--k3); white-space: nowrap; }
 
     /* ────────────────────────────────────────────
-       Responsive
+       Overflow prevention (global)
+    ──────────────────────────────────────────── */
+    html { overflow-x: hidden; }
+
+    /* Table horizontal scroll wrapper */
+    .table-scroll {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      border-radius: 12px;
+      border: 1px solid var(--k2);
+    }
+    .table-scroll .rt { border: none; border-radius: 0; }
+
+    /* ────────────────────────────────────────────
+       Responsive — 768 px
     ──────────────────────────────────────────── */
     @media (max-width: 768px) {
-      .cs-hero, .iw, .s, .cs-footer, .cap { padding-left: 1.25rem; padding-right: 1.25rem; }
-      .cs-h1 { font-size: 28px; }
+      /* Sections */
+      .cs-hero, .iw, .s, .cs-footer, .cap {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+      }
 
+      /* Footer — 2 row layout on mobile */
+      .cs-footer {
+        flex-wrap: wrap;
+        gap: 0.75rem 0;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+      }
+      .cs-footer a    { flex: 1; }
+      .cs-footer a:last-child { text-align: right; }
+      .cs-footer-c    { order: 1; flex: 0 0 100%; text-align: center; }
+
+      /* Hero */
+      .cs-h1    { font-size: 26px; line-height: 1.15; }
+      .hero-sub { font-size: 15px; }
+
+      /* Grids → single column */
       .split, .split.flip,
       .g2, .g3, .g4,
       .ia-grid, .why-grid, .comp-grid, .persona-grid,
       .ins-strip, .dc, .impact-band, .lg-grid { grid-template-columns: 1fr; }
 
-      .meta    { flex-wrap: wrap; }
-      .mi      { flex: 1 1 40%; }
+      /* Meta strip → 2 per row */
+      .meta {
+        flex-wrap: wrap;
+      }
+      .mi {
+        flex: 0 0 calc(50% - 0.5px);
+        padding: 0.75rem 1rem;
+        border-right: none;
+        border-bottom: 1px solid var(--k2);
+      }
+      .mi:nth-child(odd)              { border-right: 1px solid var(--k2); }
+      .mi:last-child,
+      .mi:nth-last-child(2):nth-child(odd) { border-bottom: none; }
 
-      .match-nodes { flex-direction: column; }
-      .ms          { padding: 4px 0; }
+      /* Flow strip — scroll internally, don't blow out page */
+      .flow-bd {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 0.5rem;
+      }
+
+      /* Match nodes — stack vertically */
+      .match-nodes { flex-direction: column; gap: 4px; }
+      .ms          { display: none; }
+      .mn          { border-radius: 8px !important; border: 1px solid var(--k2); }
+
+      /* Constraint pill — allow wrapping */
+      .constraint  { display: flex; align-items: flex-start; }
+    }
+
+    /* ────────────────────────────────────────────
+       Responsive — 480 px (small phones)
+    ──────────────────────────────────────────── */
+    @media (max-width: 480px) {
+      .cs-h1    { font-size: 22px; }
+      .hero-sub { font-size: 14px; }
+      .s-title  { font-size: 20px; }
+      .split-title { font-size: 17px; }
+      .im-num   { font-size: 36px; }
+      .meta     { max-width: 100%; }
     }
   </style>
 </head>
@@ -1017,6 +1085,7 @@
 
     <div class="div-label"><span>Who does what</span></div>
 
+    <div class="table-scroll">
     <table class="rt">
       <thead>
         <tr>
@@ -1035,6 +1104,7 @@
         <tr><td class="step">Renewals</td><td><span class="star">✦</span>Reviews Flo AI rec, acts</td><td>Approves or cancels</td><td class="dim">Usage feedback if asked</td></tr>
       </tbody>
     </table>
+    </div>
     <p style="font-size:11px;color:var(--k4);margin-top:0.5rem;font-style:italic">✦ Primary owner of this step</p>
   </section>
 
