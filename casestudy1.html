@@ -136,22 +136,27 @@
       overflow: hidden;
     }
 
-    .if.h480 { height: 480px; }
-    .if.h400 { height: 400px; }
-    .if.h380 { height: 380px; }
-    .if.h360 { height: 360px; }
-    .if.h300 { height: 300px; }
-    .if.h280 { height: 280px; }
-    .if.h260 { height: 260px; }
-    .if.h240 { height: 240px; }
-    .if.h220 { height: 220px; }
+    /* height classes kept for backwards-compat but overridden to auto */
+    .if.h480, .if.h400, .if.h380, .if.h360,
+    .if.h300, .if.h280, .if.h260, .if.h240,
+    .if.h220 { height: auto; }
 
     .if img {
       width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* Side-by-side pairs: both locked to the shorter image's height */
+    .g2 .if {
+      height: 340px;
+    }
+
+    .g2 .if img {
+      width: 100%;
       height: 100%;
       object-fit: cover;
-      object-position: top;
-      display: block;
+      object-position: top center;
     }
 
     .cap {
@@ -1125,7 +1130,7 @@
           <span class="ia-lbl">Four disconnected data views</span>
         </div>
         <div class="ia-body">
-          <svg viewBox="0 0 300 150" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto">
+          <svg viewBox="-6 -4 312 162" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto">
             <rect x="90" y="8" width="120" height="26" rx="5" fill="#f5f5f5" stroke="#e8e8e8" stroke-width="1"/>
             <text x="150" y="25" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#333333" font-weight="600">Spendflo</text>
             <line x1="150" y1="34" x2="150" y2="48" stroke="#cccccc" stroke-width="1.5"/>
@@ -1154,7 +1159,7 @@
           <span class="ia-lbl">Two connected workflows, AI across both</span>
         </div>
         <div class="ia-body">
-          <svg viewBox="0 0 300 150" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto">
+          <svg viewBox="-6 -4 312 162" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto">
             <defs>
               <marker id="a1" markerWidth="5" markerHeight="5" refX="4" refY="2.5" orient="auto"><path d="M0,0 L5,2.5 L0,5 Z" fill="#53B772"/></marker>
               <marker id="a2" markerWidth="5" markerHeight="5" refX="4" refY="2.5" orient="auto"><path d="M0,0 L5,2.5 L0,5 Z" fill="#3B5BDB"/></marker>
@@ -1281,10 +1286,7 @@
 
     <!-- BILLS -->
     <div style="margin-top:3.5rem;padding-top:3rem;border-top:1px solid var(--k1)">
-      <div class="split flip">
-        <div class="if h360">
-          <img src="Case study 1 Images/Bills , 3-way match view.png" alt="Bills 3-way match view" />
-        </div>
+      <div class="split">
         <div>
           <div class="eyebrow" style="margin-bottom:0.75rem"><span class="tag blue">P2P</span></div>
           <h3 class="split-title">Bills — invoice, PO, contract <em>in one view.</em></h3>
@@ -1299,6 +1301,9 @@
             <li>Discrepancies flagged with the specific mismatch highlighted.</li>
             <li>Approve or dispute from the same screen.</li>
           </ul>
+        </div>
+        <div class="if h360">
+          <img src="Case study 1 Images/Bills , 3-way match view.png" alt="Bills 3-way match view" />
         </div>
       </div>
 
@@ -1477,7 +1482,7 @@
         <div class="im-desc">Increase in weekly active usage among procurement leads vs pre-launch baseline.</div>
       </div>
       <div class="imc">
-        <div class="im-arr">→</div>
+        <div class="im-arr">↑</div>
         <div class="im-num">4.3</div>
         <div class="im-desc">AI trust rating out of 5 from in-product surveys across 200+ decisions.</div>
       </div>
