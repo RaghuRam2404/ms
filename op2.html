@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Cut Brand Identity — Manoj Shakar</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+
+    :root {
+      --g:   #53B772;
+      --gm:  #3d8f56;
+      --gl:  rgba(83, 183, 114, 0.12);
+      --k:   #1a1a1a;
+      --k7:  #333333;
+      --k5:  #888888;
+      --k4:  #aaaaaa;
+      --k3:  #cccccc;
+      --k2:  #e8e8e8;
+      --k1:  #f5f5f5;
+      --w:   #ffffff;
+    }
+
+    .cs-hero {
+      padding: 40px 40px 56px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .tag {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      color: var(--g);
+      background: var(--gl);
+      padding: 4px 10px;
+      border-radius: 100px;
+    }
+
+    .tag.gray { color: var(--k5); background: var(--k1); }
+
+    .sep { color: var(--k3); font-size: 11px; }
+
+    .cs-h1 {
+      font-size: clamp(30px, 5vw, 56px);
+      font-weight: 700;
+      line-height: 1.1;
+      color: var(--k);
+      letter-spacing: -0.025em;
+      max-width: 860px;
+      margin-bottom: 1rem;
+    }
+
+    .cs-h1 em { font-style: italic; color: var(--g); }
+
+    .hero-sub {
+      font-size: 17px;
+      color: var(--k5);
+      max-width: 540px;
+      line-height: 1.65;
+      font-weight: 400;
+      margin-bottom: 2.5rem;
+    }
+
+    .meta {
+      display: flex;
+      gap: 0;
+      border: 1px solid var(--k2);
+      border-radius: 12px;
+      overflow: hidden;
+      max-width: 640px;
+    }
+
+    .mi {
+      flex: 1;
+      padding: 1rem 1.25rem;
+      border-right: 1px solid var(--k2);
+    }
+
+    .mi:last-child { border-right: none; }
+
+    .ml {
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.09em;
+      color: var(--k3);
+      font-weight: 500;
+      margin-bottom: 3px;
+    }
+
+    .mv { font-size: 13px; font-weight: 600; color: var(--k); }
+
+    .iw {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 40px;
+    }
+
+    .if {
+      width: 100%;
+      border-radius: 14px;
+      background: var(--k1);
+      border: 1px solid var(--k2);
+      overflow: hidden;
+    }
+
+    .if.h480 { height: 480px; }
+
+    .if img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top;
+      display: block;
+    }
+
+    .s {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 4.5rem 40px;
+    }
+
+    hr { border: none; border-top: 1px solid var(--k1); }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.25rem;
+      margin-bottom: 0;
+    }
+
+    .info-card {
+      border: 1px solid var(--k2);
+      border-radius: 12px;
+      padding: 1.25rem 1.5rem;
+    }
+
+    .info-label {
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--k3);
+      margin-bottom: 0.5rem;
+    }
+
+    .info-text {
+      font-size: 14px;
+      color: var(--k7);
+      line-height: 1.65;
+    }
+
+    .gallery {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+
+    .gallery-img {
+      width: 100%;
+      border-radius: 12px;
+      overflow: hidden;
+      background: var(--k1);
+      border: 1px solid var(--k2);
+    }
+
+    .gallery-img img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .cs-footer {
+      border-top: 1px solid var(--k1);
+      padding: 2.5rem 40px;
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .cs-footer a { font-size: 13px; color: var(--g); text-decoration: none; font-weight: 500; white-space: nowrap; }
+    .cs-footer-c { font-size: 12px; color: var(--k3); white-space: nowrap; }
+
+    html { overflow-x: hidden; }
+
+    @media (max-width: 768px) {
+      .cs-hero, .iw, .s, .cs-footer {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+      }
+
+      .cs-footer {
+        flex-wrap: wrap;
+        gap: 0.75rem 0;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+      }
+      .cs-footer a    { flex: 1; }
+      .cs-footer a:last-child { text-align: right; }
+      .cs-footer-c    { order: 1; flex: 0 0 100%; text-align: center; }
+
+      .cs-h1    { font-size: 26px; line-height: 1.15; }
+      .hero-sub { font-size: 15px; }
+      .info-grid { grid-template-columns: 1fr; }
+
+      .meta { flex-wrap: wrap; }
+      .mi {
+        flex: 0 0 calc(50% - 0.5px);
+        padding: 0.75rem 1rem;
+        border-right: none;
+        border-bottom: 1px solid var(--k2);
+      }
+      .mi:nth-child(odd)              { border-right: 1px solid var(--k2); }
+      .mi:last-child,
+      .mi:nth-last-child(2):nth-child(odd) { border-bottom: none; }
+    }
+
+    @media (max-width: 480px) {
+      .cs-h1  { font-size: 22px; }
+      .meta   { max-width: 100%; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       NAV
+  ═══════════════════════════════════════════ -->
+  <nav class="nav">
+    <a href="index.html" class="nav__logo">
+      <img src="assets/logo.svg" alt="Manoj Shakar" class="nav__logo-img" />
+    </a>
+    <ul class="nav__links">
+      <li><a href="index.html" class="nav__link">Home</a></li>
+      <li><a href="about.html" class="nav__link">About</a></li>
+      <li><a href="craft.html" class="nav__link">Craft</a></li>
+    </ul>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════════ -->
+  <div class="cs-hero">
+    <div class="eyebrow">
+      <span class="tag">The Cut</span>
+      <span class="sep">/</span>
+      <span class="tag gray">Brand Identity</span>
+      <span class="sep">/</span>
+      <span class="tag gray">Packaging</span>
+    </div>
+
+    <h1 class="cs-h1">The Cut — <em>Brand identity</em></h1>
+
+    <p class="hero-sub">Create a brand identity for the meat shop which is based out of U.S</p>
+
+    <div class="meta">
+      <div class="mi"><div class="ml">Client</div><div class="mv">The Cut</div></div>
+      <div class="mi"><div class="ml">Location</div><div class="mv">U.S.A</div></div>
+      <div class="mi"><div class="ml">Service</div><div class="mv">Brand identity, Packaging</div></div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       HERO BANNER
+  ═══════════════════════════════════════════ -->
+  <div class="iw">
+    <div class="if h480">
+      <img src="othercs/op2_files/op2banner.png" alt="The Cut brand identity banner" />
+    </div>
+  </div>
+
+  <hr style="margin: 4rem 0 0" />
+
+  <!-- ═══════════════════════════════════════════
+       CONTENT
+  ═══════════════════════════════════════════ -->
+  <section class="s" id="brief">
+    <div class="info-grid">
+      <div class="info-card">
+        <div class="info-label">Client requirement</div>
+        <p class="info-text">Need a contemporary logo for their brand with black as their primary color.</p>
+      </div>
+      <div class="info-card">
+        <div class="info-label">My role</div>
+        <p class="info-text">Closely interacted with the client, understand more about the brand and their target audience. Designed an easily recognizable mark that can have an easy connection with its target audience. Crafted a creative yet easily remarkable logo that helps the brand to reach its target audience easily.</p>
+      </div>
+    </div>
+  </section>
+
+  <hr />
+
+  <!-- ═══════════════════════════════════════════
+       GALLERY
+  ═══════════════════════════════════════════ -->
+  <section class="s" id="gallery">
+    <div class="gallery">
+      <div class="gallery-img"><img src="othercs/op2_files/cut1.png" alt="The Cut brand identity 1" /></div>
+      <div class="gallery-img"><img src="othercs/op2_files/cut2.png" alt="The Cut brand identity 2" /></div>
+      <div class="gallery-img"><img src="othercs/op2_files/cut3.png" alt="The Cut brand identity 3" /></div>
+      <div class="gallery-img"><img src="othercs/op2_files/cut4.png" alt="The Cut brand identity 4" /></div>
+      <div class="gallery-img"><img src="othercs/op2_files/cut5.png" alt="The Cut brand identity 5" /></div>
+      <div class="gallery-img"><img src="othercs/op2_files/cut6.png" alt="The Cut brand identity 6" /></div>
+      <div class="gallery-img"><img src="othercs/op2_files/cut7.png" alt="The Cut brand identity 7" /></div>
+      <div class="gallery-img"><img src="othercs/op2_files/cut8.png" alt="The Cut brand identity 8" /></div>
+      <div class="gallery-img"><img src="othercs/op2_files/cut9.png" alt="The Cut brand identity 9" /></div>
+      <div class="gallery-img"><img src="othercs/op2_files/cut10.png" alt="The Cut brand identity 10" /></div>
+      <div class="gallery-img"><img src="othercs/op2_files/cut11.png" alt="The Cut brand identity 11" /></div>
+      <div class="gallery-img"><img src="othercs/op2_files/cut12.png" alt="The Cut brand identity 12" /></div>
+      <div class="gallery-img"><img src="othercs/op2_files/cut13.png" alt="The Cut brand identity 13" /></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER STRIP
+  ═══════════════════════════════════════════ -->
+  <div class="cs-footer">
+    <a href="index.html">← All work</a>
+    <span class="cs-footer-c">Manoj Shakar &nbsp;·&nbsp; Product Design</span>
+    <a href="op3.html">Next project →</a>
+  </div>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="assets/components.js"></script>
+</body>
+</html>
