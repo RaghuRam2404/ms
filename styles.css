@@ -121,12 +121,26 @@ ol, ul {
   align-items: center;
   justify-content: space-between;
   padding: 24px var(--container-px);
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 1000;
   background-color: rgba(255, 255, 255, 0.92);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
+}
+
+/* Detail pages use fixed nav to avoid sticky inconsistencies across browsers. */
+body.detail-page .nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+body.detail-page .body {
+  padding-top: 68px;
 }
 
 .nav__logo {
@@ -198,7 +212,7 @@ ol, ul {
 ═══════════════════════════════════════════════ */
 .hero {
   padding-top: 40px;
-  padding-bottom: 80px;
+  padding-bottom: 40px;
 }
 
 .hero .container {
@@ -218,7 +232,6 @@ ol, ul {
   background: linear-gradient(224.47deg, rgba(48, 253, 224, 0.08) -8.52%, rgba(164, 247, 115, 0.08) 114.22%);
   font-size: 11px;
   font-weight: 600;
-  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--color-accent);
   opacity: 1;
@@ -259,7 +272,45 @@ ol, ul {
   font-size: 15px;
   line-height: 1.7;
   color: var(--color-text);
-  max-width: 680px;
+  max-width: none;
+  width: 100%;
+}
+
+.hero__stats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  width: 100%;
+  max-width: none;
+  margin-top: 8px;
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.hero__stat {
+  padding: 20px 24px 16px;
+  border-right: 1px solid var(--color-border);
+}
+
+.hero__stat:last-child {
+  border-right: none;
+}
+
+.hero__stat-value {
+  font-family: var(--font-heading);
+  font-size: clamp(28px, 3.2vw, 40px);
+  font-weight: 700;
+  line-height: 1;
+  color: var(--color-text);
+}
+
+.hero__stat-suffix {
+  color: inherit;
+}
+
+.hero__stat-label {
+  margin-top: 8px;
+  font-size: 13px;
+  color: var(--color-text-muted);
 }
 
 .hero__cta {
@@ -272,7 +323,8 @@ ol, ul {
    LOGOS
 ═══════════════════════════════════════════════ */
 .logos {
-
+  padding-top: 24px;
+  padding-bottom: 56px;
 }
 
 .logos__label {
@@ -977,6 +1029,23 @@ ol, ul {
 
   .logos__grid {
     gap: 32px;
+  }
+
+  .hero__stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .hero__stat:nth-child(2) {
+    border-right: none;
+  }
+
+  .hero__stat:nth-child(3),
+  .hero__stat:nth-child(4) {
+    border-top: 1px solid var(--color-border);
+  }
+
+  .hero__stat:nth-child(3) {
+    border-right: 1px solid var(--color-border);
   }
 
   .hero__cta {

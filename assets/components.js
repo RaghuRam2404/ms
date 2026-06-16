@@ -36,6 +36,14 @@ function bodyLoad() {
       holder.style.display = 'none';
       var body = document.querySelector('.body');
       if (body) body.style.display = 'block';
+      
+      // Handle hash navigation after body is visible
+      if (window.location.hash) {
+        var target = document.querySelector(window.location.hash);
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
     }, 400);
   });
 }
