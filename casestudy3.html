@@ -485,7 +485,6 @@
       border-radius: 12px;
       background: var(--gl);
       border-left: 3px solid var(--g);
-      max-width: 600px;
     }
 
     .pq p { font-size: 17px; line-height: 1.5; color: var(--k); }
@@ -630,16 +629,16 @@
       <span class="tag gray">Campaign UX</span>
     </div>
 
-    <h1 class="cs-h1">From Concept to Clicks: <em>Creating a Seamless Social Media Campaign Experience</em></h1>
+    <h1 class="cs-h1">One designer. One month. <em>One campaign experience.</em></h1>
 
-    <p class="hero-sub">Freshworks needed a campaign creation tool that marketers actually wanted to use. Fragmented flows, unclear status, and too many steps to publish a single post - this is how we fixed it.</p>
+    <p class="hero-sub">Marketers inside Freshworks' suite were stitching together a scheduler, a design tool, and email threads to ship a single campaign. Posts existed, campaigns didn't. As the sole designer on a one-month timeline, I took the flow from a six-tool competitive teardown to engineering handoff, cutting a measured two-hour creation task to under twenty minutes.</p>
 
     <div class="meta">
       <div class="mi"><div class="ml">Company</div><div class="mv">Freshworks</div></div>
-      <div class="mi"><div class="ml">Duration</div><div class="mv">1 month</div></div>
-      <div class="mi"><div class="ml">Platform</div><div class="mv">Desktop</div></div>
+      <div class="mi"><div class="ml">Timeline</div><div class="mv">1 month</div></div>
       <div class="mi"><div class="ml">Role</div><div class="mv">Sole Product Designer</div></div>
       <div class="mi"><div class="ml">Team</div><div class="mv">1 PM · 5 Engineers</div></div>
+      <div class="mi"><div class="ml">Task time</div><div class="mv hi">2 hrs to &lt;20 min</div></div>
     </div>
   </div>
 
@@ -648,10 +647,10 @@
   ═══════════════════════════════════════════ -->
   <div class="iw">
     <div class="if h480">
-      <img src="Case study 3 Images/1112.png" alt="Social media campaign creation interface" />
+      <img src="Case study 3 rework/Final shipped design.png" alt="Redesigned campaign creation interface with multi-page posting and live preview" />
     </div>
   </div>
-  <p class="cap">The redesigned campaign creation experience - from brief to scheduled post in one unified flow.</p>
+  <p class="cap">The final creation screen: campaign name, post to multiple pages, customise per page, and a live desktop and mobile preview of the post as it will appear on each platform.</p>
 
   <hr style="margin: 4rem 0 0" />
 
@@ -659,128 +658,82 @@
        01  OVERVIEW
   ═══════════════════════════════════════════ -->
   <section class="s" id="overview">
-    <div class="s-num">01 &nbsp;·&nbsp; Overview</div>
-    <h2 class="s-title">What is a <em>social media campaign?</em></h2>
-    <p class="s-lead">A social media campaign is a coordinated marketing effort that uses social media platforms to achieve specific goals - building brand awareness, driving traffic, generating leads, or promoting a product. The complexity is in the coordination, not the concept.</p>
+    <div class="s-num">01 &nbsp;·&nbsp; Context</div>
+    <h2 class="s-title">Posts existed. <em>Campaigns didn't.</em></h2>
+    <p class="s-lead">Every existing flow treated a post as the unit of work. But marketing teams don't think in posts, they think in campaigns: a goal, a set of coordinated posts across pages and platforms, and a result they report upward. The tooling forced them to hold the campaign in their head, or in a spreadsheet.</p>
 
     <div class="why-grid" style="margin-bottom: 2rem">
       <div class="wc">
-        <div class="wc-icon">🌐</div>
-        <div class="wc-title">Wide reach at scale</div>
-        <p class="wc-desc">Billions of active users across platforms, with precise targeting by demographics, interest, and behaviour. Campaigns reach the right people at the right moment.</p>
+        <div class="wc-icon">🧩</div>
+        <div class="wc-title">Fragmented creation flow</div>
+        <p class="wc-desc">Drafting in a design tool, copy in a doc, scheduling in a third product. Publishing one post meant context-switching across three surfaces, with approval happening over email.</p>
       </div>
       <div class="wc">
-        <div class="wc-icon">💬</div>
-        <div class="wc-title">Real-time feedback loops</div>
-        <p class="wc-desc">Unlike broadcast channels, social media is a two-way medium. Users comment, share, and react - giving teams immediate signal to iterate their messaging.</p>
+        <div class="wc-icon">🫥</div>
+        <div class="wc-title">No campaign-level status</div>
+        <p class="wc-desc">Was the campaign scheduled, published, or stuck in draft? No screen answered that. Status lived in the marketer's memory and in Slack threads, and performance lived in platform exports.</p>
       </div>
       <div class="wc">
-        <div class="wc-icon">📊</div>
-        <div class="wc-title">Measurable, adjustable</div>
-        <p class="wc-desc">Every impression, click, and conversion is trackable. Budgets flex in real time. Campaigns can be paused, pivoted, or amplified mid-flight based on performance data.</p>
-      </div>
-      <div class="wc">
-        <div class="wc-icon">🎯</div>
-        <div class="wc-title">Enhanced targeting precision</div>
-        <p class="wc-desc">Advanced targeting options let teams focus spend on exact demographics, locations, or behaviours - minimising waste and maximising relevance for each audience segment.</p>
-      </div>
-      <div class="wc">
-        <div class="wc-icon">💰</div>
-        <div class="wc-title">Cost-effective vs. traditional</div>
-        <p class="wc-desc">Compared to print, TV, or radio, social campaigns offer a lower floor for entry and more granular budget control - critical for teams running multiple simultaneous campaigns.</p>
-      </div>
-      <div class="wc">
-        <div class="wc-icon">🚀</div>
-        <div class="wc-title">Viral amplification potential</div>
-        <p class="wc-desc">Shareable, resonant content can spread organically well beyond paid reach - exponentially increasing brand visibility without proportional spend increases.</p>
+        <div class="wc-icon">⏱️</div>
+        <div class="wc-title">Two hours to publish</div>
+        <p class="wc-desc">We timed the existing multi-tool process with a marketer: roughly two hours from brief to a scheduled multi-platform post. The cost wasn't effort, it was campaigns that never shipped.</p>
       </div>
     </div>
 
-    <div class="iw" style="padding: 0">
-      <div class="if hauto">
-        <img src="Case study 3 Images/001.png" alt="Why social media campaigns matter - market overview" />
-      </div>
+    <div class="pq">
+      <p>⚡ <strong>Constraint:</strong> one month, one designer, scope locked. Five phases, research to final design, with every research method having to pay for its calendar time. No phase got a second week.</p>
     </div>
   </section>
 
   <hr />
 
   <!-- ═══════════════════════════════════════════
-       02  DESIGN PROCESS
-  ═══════════════════════════════════════════ -->
-  <section class="s" id="process">
-    <div class="s-num">02 &nbsp;·&nbsp; Design Process</div>
-    <h2 class="s-title">Five phases. <em>One month.</em></h2>
-    <p class="s-lead">With a tight timeline and a clear scope, every phase had a job. Research informed strategy, strategy shaped the ideas, ideas became wires, wires became screens.</p>
-
-    <div class="process-grid">
-      <div class="ps">
-        <div class="ps-num">01</div>
-        <div class="ps-title">Research</div>
-        <p class="ps-desc">Competitor landscape analysis. Identify gaps and opportunities across existing tools.</p>
-      </div>
-      <div class="ps">
-        <div class="ps-num">02</div>
-        <div class="ps-title">UX Strategy</div>
-        <p class="ps-desc">User personas and journey maps. Define the value proposition and core features.</p>
-      </div>
-      <div class="ps">
-        <div class="ps-num">03</div>
-        <div class="ps-title">Ideation</div>
-        <p class="ps-desc">Concept generation. Sketches, site maps, and user flows for the campaign feature.</p>
-      </div>
-      <div class="ps">
-        <div class="ps-num">04</div>
-        <div class="ps-title">Wireframes</div>
-        <p class="ps-desc">Low-fidelity wires to visualise the UI and interaction flow. Iterated with the team.</p>
-      </div>
-      <div class="ps active">
-        <div class="ps-num">05</div>
-        <div class="ps-title">Design</div>
-        <p class="ps-desc">Consistent layouts, typography, and visual language. Intuitive, clean, and on-brand.</p>
-      </div>
-    </div>
-
-    <div class="if hauto">
-      <img src="Case study 3 Images/002.png" alt="Design process diagram" />
-    </div>
-  </section>
-
-  <hr />
-
-  <!-- ═══════════════════════════════════════════
-       03  RESEARCH
+       02  RESEARCH
   ═══════════════════════════════════════════ -->
   <section class="s" id="research">
-    <div class="s-num">03 &nbsp;·&nbsp; Research</div>
-    <h2 class="s-title">Two types of tools. <em>One shared gap.</em></h2>
-    <p class="s-lead">Competitor analysis in social media campaigns means assessing rivals' strategies, content creation flows, and scheduling experiences to find where each tool breaks down - and where our opportunity sat.</p>
+    <div class="s-num">02 &nbsp;·&nbsp; Research</div>
+    <h2 class="s-title">Six tools, two categories. <em>Three shared gaps.</em></h2>
+    <p class="s-lead">The market split cleanly in two: post-management tools (Ryzely, Publer, Later, Zoho Social) and comprehensive campaign suites (Mailchimp, HubSpot). I walked the full creation-to-publish flow in all six and scored them on a feature matrix: multiple post creation, live preview, character limit validation, and media upload support.</p>
 
-    <div class="if hauto" style="margin-bottom: 1.5rem">
-      <img src="Case study 3 Images/003.png" alt="Two types of social media campaign tools" />
+    <div class="g3" style="margin-bottom: 1.5rem">
+      <div class="wc">
+        <div class="wc-title">Competitive teardown · 6 tools</div>
+        <p class="wc-desc">Full creation-to-publish walkthrough in each, scored on a four-row feature matrix. Answered: where does every tool break down, and what does nobody solve?</p>
+      </div>
+      <div class="wc">
+        <div class="wc-title">Baseline task timing</div>
+        <p class="wc-desc">Timed a marketer running the existing multi-tool process end to end, brief to scheduled post. The ~2 hour result became the benchmark every iteration was tested against.</p>
+      </div>
+      <div class="wc">
+        <div class="wc-title">Moderated sessions · 2 rounds</div>
+        <p class="wc-desc">Task-based sessions with practising marketers at iteration 1 and iteration 3, same task, same timer. Answered: does the design actually reduce the load, or just look like it does?</p>
+      </div>
     </div>
 
-    
-
-    <div class="if hauto" style="margin-bottom: 1.5rem">
-      <img src="Case study 3 Images/004.png" alt="Overall competitor analysis report" />
+    <div class="if hauto" style="margin-bottom: 1rem">
+      <img src="Case study 3 rework/post management tools vs comprehensive campaign tools.png" alt="Market map: post-management tools vs comprehensive campaign tools" />
     </div>
+
+    <div class="if hauto" style="margin-bottom: 0.5rem">
+      <img src="Case study 3 rework/Feature matrix across the six tools.png" alt="Feature matrix across the six tools" />
+    </div>
+    <p class="cap" style="padding: 0; margin-bottom: 1.5rem">The matrix that set the brief. Multiple post creation: only Publer and HubSpot. Live preview: four of six. Character limit validation: zero of six.</p>
 
     <div class="ins-strip">
       <div class="ic">
         <div class="ic-n">1</div>
-        <div class="ic-title">Campaign-level visibility was missing everywhere</div>
-        <p class="ic-desc">Every tool treated posts as individual items. No tool connected related posts into a campaign unit with shared status, goal, and performance view.</p>
+        <div class="ic-title">Multi-page posting was rare and clunky</div>
+        <p class="ic-desc">Only Publer and HubSpot supported creating the same post across multiple pages, and both buried it. The rest forced page-by-page repetition. Campaign-level coordination didn't exist anywhere.</p>
       </div>
       <div class="ic hi">
         <div class="ic-n">2</div>
-        <div class="ic-title">Simplicity vs. depth was a false trade-off</div>
-        <p class="ic-desc">Simple tools were fast but shallow. Deep tools were powerful but slow. The gap was a creation flow that starts simple and reveals depth only when needed.</p>
+        <div class="ic-title">Live preview was inconsistent</div>
+        <p class="ic-desc">Later and Zoho Social had no preview at all. The four that did showed a generic render, not how the post would actually appear per platform, per device. Marketers published on faith.</p>
       </div>
       <div class="ic">
         <div class="ic-n">3</div>
-        <div class="ic-title">Multi-platform publishing was universally clunky</div>
-        <p class="ic-desc">Managing the same campaign across Facebook, Instagram, LinkedIn, and Twitter required repetitive manual steps in every tool. Automation was either absent or unreliable.</p>
+        <div class="ic-title">Character limit validation: zero of six</div>
+        <p class="ic-desc">Not one tool validated content against each platform's character limits before publish. Posts silently truncated or failed on the platform's side. This gap was free to own, and it shaped both the composer and the error-state designs.</p>
       </div>
     </div>
   </section>
@@ -788,206 +741,210 @@
   <hr />
 
   <!-- ═══════════════════════════════════════════
-       04  UX STRATEGY - PERSONAS
+       03  WHO WE DESIGNED FOR
   ═══════════════════════════════════════════ -->
-  <section class="s" id="strategy">
-    <div class="s-num">04 &nbsp;·&nbsp; UX Strategy</div>
-    <h2 class="s-title">Three personas. <em>Three different definitions of success.</em></h2>
-    <p class="s-lead">Understanding the unique goals of each user type shaped every structural decision in the product. The tool had to serve a solo marketer's speed, a manager's oversight, and an executive's need for proof of impact.</p>
+  <section class="s" id="personas">
+    <div class="s-num">03 &nbsp;·&nbsp; Who we designed for</div>
+    <h2 class="s-title">One marketing team. <em>Three people in the flow.</em></h2>
+    <p class="s-lead">Research centred on a medium-sized e-commerce marketing team, where a campaign passes through three pairs of hands: the manager who owns the outcome, the designer who makes the creative, and the content creator who writes and ships the posts. Each shaped a structural decision in the product.</p>
 
-    <div class="g2">
-      <div class="sc">
-        <div class="if hauto">
-          <img src="Case study 3 Images/005.png" alt="User persona 1 - Digital Marketing Manager" />
+    <div class="persona-grid">
+      <div class="pc">
+        <div class="pc-head">
+          <div class="pc-avatar" style="background: var(--gl); color: var(--gm)">PM</div>
+          <div class="pc-name">Prem · Digital Marketing Manager</div>
+          <div class="pc-role" style="color: var(--gm)">Owns the campaign</div>
+        </div>
+        <div class="pc-body">
+          <div>
+            <div class="pc-rl">Goals</div>
+            <div class="pc-rv">Increase brand visibility, drive website traffic and conversions, optimise campaigns, and improve ROI.</div>
+          </div>
+          <div>
+            <div class="pc-rl">Challenges</div>
+            <div class="pc-rv">Limited time, managing multiple platforms, and analysing campaign performance across them.</div>
+          </div>
+          <div>
+            <div class="pc-rl">Shaped in the product</div>
+            <div class="pc-rv ac-t">The campaign list with status, impressions, and interactions per campaign, and one-click metrics. Performance without exports.</div>
+          </div>
         </div>
       </div>
-      <div class="sc">
-        <div class="if hauto">
-          <img src="Case study 3 Images/006.png" alt="User persona 2 - Brand Manager" />
+      <div class="pc">
+        <div class="pc-head">
+          <div class="pc-avatar" style="background: var(--bll); color: var(--bl)">GD</div>
+          <div class="pc-name">Alex · Graphic Designer</div>
+          <div class="pc-role" style="color: var(--bl)">Makes the creative</div>
+        </div>
+        <div class="pc-body">
+          <div>
+            <div class="pc-rl">Goals</div>
+            <div class="pc-rv">Showcase creativity, attract clients, and collaborate with the rest of the marketing team.</div>
+          </div>
+          <div>
+            <div class="pc-rl">Challenges</div>
+            <div class="pc-rv">Balancing creativity with branding, finding the target audience, and time management.</div>
+          </div>
+          <div>
+            <div class="pc-rl">Shaped in the product</div>
+            <div class="pc-rv ac-b">The media gallery: upload once, reuse across posts and campaigns, with format and size validation at upload, not at publish.</div>
+          </div>
         </div>
       </div>
-    </div>
-
-    <div style="margin-top: 1.25rem">
-      <div class="sc">
-        <div class="if hauto">
-          <img src="Case study 3 Images/007.png" alt="User persona 3 - Marketing Director" />
+      <div class="pc">
+        <div class="pc-head">
+          <div class="pc-avatar" style="background: var(--orl); color: var(--or)">CC</div>
+          <div class="pc-name">Anju · Content Creator</div>
+          <div class="pc-role" style="color: var(--or)">Writes and ships</div>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <hr />
-
-  <!-- ═══════════════════════════════════════════
-       05  IDEATION
-  ═══════════════════════════════════════════ -->
-  <section class="s" id="ideation">
-    <div class="s-num">05 &nbsp;·&nbsp; Ideation</div>
-    <h2 class="s-title">Sketching before <em>committing.</em></h2>
-    <p class="s-lead">Early sketches explored the core question: how do you structure a creation flow that's fast for experts but doesn't lose beginners? The sketch phase explored linear vs. modular approaches before landing on the step-by-step pattern that made it into wires.</p>
-
-    <div class="if hauto">
-      <img src="Case study 3 Images/008.png" alt="Ideation sketches - campaign creation flow explorations" />
-    </div>
-  </section>
-
-  <hr />
-
-  <!-- ═══════════════════════════════════════════
-       06  WIREFRAMES
-  ═══════════════════════════════════════════ -->
-  <section class="s" id="wireframes">
-    <div class="s-num">06 &nbsp;·&nbsp; Wireframes</div>
-    <h2 class="s-title">Structure before <em>polish.</em></h2>
-    <p class="s-lead">Wireframes locked the information hierarchy and interaction model before any visual work started. Key decisions around the step indicator, platform selection, and post preview panel were made and validated at this stage.</p>
-
-    <div class="if hauto">
-      <img src="Case study 3 Images/009.png" alt="Wireframes - campaign creation flow" />
-    </div>
-    <p class="cap" style="padding: 0; margin-top: 0.75rem">Low-fidelity wireframes showing the step-by-step campaign creation flow, platform toggle pattern, and preview layout. Validated with the PM and engineers before high-fidelity work began.</p>
-
-    <div class="ins-strip" style="margin-top: 1.5rem">
-      <div class="ic">
-        <div class="ic-n">1</div>
-        <div class="ic-title">Step indicator up top</div>
-        <p class="ic-desc">A persistent step indicator at the top of the creation modal showed users exactly where they were and how many steps remained - reducing abandonment anxiety.</p>
-      </div>
-      <div class="ic">
-        <div class="ic-n">2</div>
-        <div class="ic-title">Platform toggle, not separate forms</div>
-        <p class="ic-desc">Instead of a separate form per platform, a toggle switched the preview pane to show how the same content would render on each channel. One input, multiple previews.</p>
-      </div>
-      <div class="ic hi">
-        <div class="ic-n">3</div>
-        <div class="ic-title">Live preview as a trust signal</div>
-        <p class="ic-desc">Showing the post preview as users typed removed uncertainty. Teams stopped asking "how will this look?" and focused on whether the content was right.</p>
-      </div>
-    </div>
-  </section>
-
-  <hr />
-
-  <!-- ═══════════════════════════════════════════
-       07  DESIGN ITERATIONS
-  ═══════════════════════════════════════════ -->
-  <section class="s" id="design">
-    <div class="s-num">07 &nbsp;·&nbsp; Design</div>
-    <h2 class="s-title">Four iterations. <em>One final solution.</em></h2>
-    <p class="s-lead">Each iteration incorporated user feedback, stakeholder input, and engineering constraints. The progression moved from a functional but noisy first version to a clean, focused final experience where every element earns its place on the screen.</p>
-
-    <div class="g2" style="margin-bottom: 1.25rem">
-      <div class="sc">
-        <div class="iter-label" style="background: var(--k1); color: var(--k4)">Iteration 1 - First pass</div>
-        <div class="if h300">
-          <img src="Case study 3 Images/010.png" alt="Design iteration 1" />
-        </div>
-        <div class="sc-info">
-          <div class="sc-note">All elements on one screen. Feedback: felt overwhelming. The platform selector, content area, and schedule controls competed for attention simultaneously.</div>
-        </div>
-      </div>
-      <div class="sc">
-        <div class="iter-label" style="background: var(--k1); color: var(--k4)">Iteration 2 - Phased reveal</div>
-        <div class="if h300">
-          <img src="Case study 3 Images/011.png" alt="Design iteration 2" />
-        </div>
-        <div class="sc-info">
-          <div class="sc-note">Introduced the step-by-step wizard model. Reduced cognitive load significantly. Feedback: step transitions felt abrupt and the back-navigation was unclear.</div>
+        <div class="pc-body">
+          <div>
+            <div class="pc-rl">Goals</div>
+            <div class="pc-rv">Craft engaging content, increase brand awareness, and drive website traffic.</div>
+          </div>
+          <div>
+            <div class="pc-rl">Challenges</div>
+            <div class="pc-rv">Staying current with trends, maintaining consistency across platforms, and measuring what worked.</div>
+          </div>
+          <div>
+            <div class="pc-rl">Shaped in the product</div>
+            <div class="pc-rv ac-a">One composer for all pages with customise-per-page, live per-platform previews, and character counters per platform while typing.</div>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="g2" style="margin-bottom: 1.25rem">
-      <div class="sc">
-        <div class="iter-label" style="background: var(--k1); color: var(--k4)">Iteration 3 - Refined transitions</div>
-        <div class="if h300">
-          <img src="Case study 3 Images/012.png" alt="Design iteration 3" />
-        </div>
-        <div class="sc-info">
-          <div class="sc-note">Smoothed step transitions. Added persistent step indicator and progress bar. Preview panel introduced alongside content step. Feedback: preview needed to be larger.</div>
-        </div>
-      </div>
-      <div class="sc">
-        <div class="iter-label" style="background: var(--k1); color: var(--k4)">Iteration 4 - Preview-first layout</div>
-        <div class="if h300">
-          <img src="Case study 3 Images/013.png" alt="Design iteration 4" />
-        </div>
-        <div class="sc-info">
-          <div class="sc-note">Split layout: form on left, live preview on right. Platform toggle drives the preview pane. Nearly final - minor copy and spacing refinements remained.</div>
-        </div>
-      </div>
+    <div class="if hauto" style="margin-top: 1.5rem">
+      <img src="Case study 3 Images/005.png" alt="Persona: Prem, Digital Marketing Manager" />
     </div>
-
-    <div class="div-label"><span>Final solution</span></div>
-
-    <div class="sc">
-      <div class="iter-label" style="background: var(--gl); color: var(--gm)">Final - Shipped design</div>
-      <div class="if" style="height: 680px">
-        <img src="Case study 3 Images/014.png" alt="Final solution - social media campaign creation" />
-      </div>
-      <div class="sc-info">
-        <div class="sc-name">The final campaign creation experience</div>
-        <div class="sc-note">Step-by-step creation with live preview. Platform toggle, smart scheduling, and a review step before publish. Approved at design review and handed off to engineering in week 3.</div>
-      </div>
+    <div class="if hauto" style="margin-top: 1rem">
+      <img src="Case study 3 Images/006.png" alt="Persona: Alex, Graphic Designer" />
+    </div>
+    <div class="if hauto" style="margin-top: 1rem">
+      <img src="Case study 3 Images/007.png" alt="Persona: Anju, Content Creator" />
     </div>
   </section>
 
+
   <hr />
 
-  <!-- ═══════════════════════════════════════════
-       08  USER STORY
-  ═══════════════════════════════════════════ -->
-  <section class="s" id="userstory">
-    <div class="s-num">08 &nbsp;·&nbsp; User Story</div>
-    <h2 class="s-title">Prem, Digital Marketing Manager <em>at Dunzo Daily.</em></h2>
+  <!-- ==============================================
+       04  DESIGN DECISIONS
+  ============================================== -->
+  <section class="s" id="decisions">
+    <div class="s-num">04 &nbsp;&middot;&nbsp; Design decisions</div>
+    <h2 class="s-title">From sketches to a shipped flow <em>in four iterations.</em></h2>
+    <p class="s-lead">Early sketches explored two flows on paper: connecting social media platforms, and creating a campaign across them. Linear vs modular approaches were tested before anything reached Figma, and every iteration after that was annotated with what it still got wrong.</p>
 
-    <div class="split" style="margin-bottom: 2rem">
-      <div>
-        <p class="split-body">Prem wants to run a targeted social media campaign to increase brand awareness and drive customer engagement for Dunzo Daily. He needs a platform that lets him:</p>
-        <ul class="bullets" style="margin-bottom: 1.25rem">
-          <li>Create and schedule captivating posts without needing a separate design tool</li>
-          <li>Track campaign performance metrics across platforms in one dashboard</li>
-          <li>Manage multiple active campaigns without losing context between them</li>
-          <li>Get brand manager approval without resorting to email or Slack threads</li>
-          <li>Hand off campaign reports to his director without manual data assembly</li>
-        </ul>
-        <div style="background: var(--k1); border-radius: 10px; padding: 1rem 1.25rem; border-left: 3px solid var(--g)">
-          <p style="font-size: 11px; font-weight: 600; letter-spacing: 0.09em; text-transform: uppercase; color: var(--g); margin-bottom: 0.4rem">The outcome</p>
-          <p style="font-size: 14px; color: var(--k); line-height: 1.6;">By using the redesigned campaign tool, Prem launches his campaign in under 20 minutes - down from a 2-hour process involving three separate tools. His director sees performance in one click. No exports. No spreadsheets.</p>
-        </div>
+    <div class="if hauto" style="margin-bottom: 0.5rem">
+      <img src="Case study 3 rework/connecting social media platform flow and creating social media campaign flow&quot;.png" alt="Ideation sketches: connecting platform flow and campaign flow" />
+    </div>
+    <p class="cap" style="padding: 0; margin-bottom: 1.5rem">The two sketched flows: connecting platform accounts, and creating a campaign across them.</p>
+
+    <div class="if hauto" style="margin-bottom: 0.5rem">
+      <img src="Case study 3 rework/Wireframes - campaign creation flow with composer and preview layout.png" alt="Wireframes - campaign creation flow with composer and preview layout" />
+    </div>
+    <p class="cap" style="padding: 0; margin-bottom: 2rem">Low-fidelity wireframes locking the composer, page selection, media gallery, and preview layout. Validated with the PM and engineers before high-fidelity work.</p>
+
+    <h3 class="split-title">Decision 1: one composer, <em>many pages.</em></h3>
+    <div class="g3" style="margin: 1rem 0 1.5rem">
+      <div class="wc">
+        <div class="wc-title">What we tried</div>
+        <p class="wc-desc">Iteration 1 put everything on one screen with no way to switch between social platforms and no option to clone a post. Iteration 2's fix made creating multiple posts take far too many clicks.</p>
       </div>
-      <div class="if hauto">
-        <img src="Case study 3 Images/015.png" alt="User story walkthrough - Prem creating a campaign" />
+      <div class="wc">
+        <div class="wc-title">Why it didn't work</div>
+        <p class="wc-desc">Both versions treated each post as separate work. The annotations tell the story: "no option to switch between social platform," "no option to clone the post," "creating multiple posts needs a lot of clicks."</p>
+      </div>
+      <div class="wc" style="background: var(--gl); border-color: rgba(83,183,114,0.28)">
+        <div class="wc-title" style="color: var(--gm)">What we built</div>
+        <p class="wc-desc" style="color: var(--gm)">"Post to" page cards at the top of one composer: add Facebook, Instagram, and LinkedIn pages, write once, and post to all of them in a single click. A customise-posts toggle opens per-page editing only when content needs to differ.</p>
       </div>
     </div>
-  </section>
 
+    <div class="g2" style="margin-bottom: 1.5rem">
+      <div class="if h320">
+        <img src="Case study 3 rework/Iteration 1 - single screen, no platform switching, no post cloning.png" alt="Iteration 1 - single screen, no platform switching, no post cloning" />
+      </div>
+      <div class="if h320">
+        <img src="Case study 3 rework/Iteration 2 - phased reveal, multiple posts took too many clicks.png" alt="Iteration 2 - phased reveal, multiple posts took too many clicks" />
+      </div>
+    </div>
+
+    <h3 class="split-title">Decision 2: a live preview <em>per platform, per device.</em></h3>
+    <div class="g3" style="margin: 1rem 0 1.5rem">
+      <div class="wc">
+        <div class="wc-title">What we tried</div>
+        <p class="wc-desc">Iterations 2 and 3 shipped without a live preview. Review annotations flagged it both times: "no live preview," alongside "no option to delete the post."</p>
+      </div>
+      <div class="wc">
+        <div class="wc-title">Why it didn't work</div>
+        <p class="wc-desc">In sessions, marketers kept asking "how will this look?" while typing. Four of six competitors had some preview; the two without it felt the most uncertain to use. We were repeating their worst gap.</p>
+      </div>
+      <div class="wc" style="background: var(--gl); border-color: rgba(83,183,114,0.28)">
+        <div class="wc-title" style="color: var(--gm)">What we built</div>
+        <p class="wc-desc" style="color: var(--gm)">A split layout: composer on the left, live preview on the right, with platform tabs (Facebook, LinkedIn, Instagram) and a desktop/mobile toggle. The preview renders the post as each platform will actually display it, updating as users type.</p>
+      </div>
+    </div>
+
+    <h3 class="split-title">Decision 3: validate at the keystroke, <em>not at publish.</em></h3>
+    <div class="g3" style="margin: 1rem 0 1.5rem">
+      <div class="wc">
+        <div class="wc-title">What we tried</div>
+        <p class="wc-desc">Following the market: no character validation. Every one of the six tools we tore down let users publish first and find out later.</p>
+      </div>
+      <div class="wc">
+        <div class="wc-title">Why it didn't work</div>
+        <p class="wc-desc">Posts truncated or failed silently on the platform's side. The same caption has different ceilings on Facebook, LinkedIn, and Instagram. The research matrix showed this gap was universal, which made it the cheapest trust win available.</p>
+      </div>
+      <div class="wc" style="background: var(--gl); border-color: rgba(83,183,114,0.28)">
+        <div class="wc-title" style="color: var(--gm)">What we built</div>
+        <p class="wc-desc" style="color: var(--gm)">Per-platform character counters inside the composer, counting against each platform's limit simultaneously. Overflow flags the specific platforms exceeded before save, with the exact overage shown. The one feature no competitor had.</p>
+      </div>
+    </div>
+
+    <div class="g2" style="margin-bottom: 1.5rem">
+      <div class="if h320">
+        <img src="Case study 3 rework/Iteration 3 - refined transitions, still missing delete and live preview.png" alt="Iteration 3 - refined transitions, still missing delete and live preview" />
+      </div>
+      <div class="if h320">
+        <img src="Case study 3 rework/Iteration 4 - preview-first split layout, near final.png" alt="Iteration 4 - preview-first split layout, near final" />
+      </div>
+    </div>
+
+    <h3 class="split-title">The final solution</h3>
+    <div class="if hauto" style="margin-bottom: 0.5rem">
+      <img src="Case study 3 rework/Final shipped design.png" alt="Final shipped design" />
+    </div>
+    <p class="cap" style="padding: 0">Create a multi-platform campaign in a single click: page cards across Facebook, Instagram, and LinkedIn, customise per page, per-platform character counters, media gallery, live desktop and mobile preview, and save as draft, schedule, or post now. Approved at design review and handed to engineering in week 3.</p>
+  </section>
   <hr />
 
   <!-- ═══════════════════════════════════════════
-       09  EDGE CASES
+       05  EDGE CASES
   ═══════════════════════════════════════════ -->
   <section class="s" id="edgecases">
-    <div class="s-num">09 &nbsp;·&nbsp; Edge Cases &amp; Error States</div>
+    <div class="s-num">05 &nbsp;·&nbsp; Edge Cases &amp; Error States</div>
     <h2 class="s-title">What happens when <em>things go wrong.</em></h2>
-    <p class="s-lead">A creation flow is only as good as its error handling. Designing for edge cases - failed uploads, scheduling conflicts, platform API errors, and incomplete drafts - prevented the majority of support tickets after launch.</p>
+    <p class="s-lead">A creation flow is only as good as its error handling, and the research finding that no tool validated content made this section the differentiator. Every limit is specific, surfaced before publish, and tells the user exactly what to fix.</p>
 
-    <div class="if hauto" style="margin-bottom: 1.5rem">
-      <img src="Case study 3 Images/016.png" alt="Edge cases and error states design" />
+    <div class="if hauto" style="margin-bottom: 1rem">
+      <img src="Case study 3 rework/per-platform character overflow, media gallery limits, upload size validation, video runtime limits, upload retry states.png" alt="Edge cases: per-platform character overflow, media gallery limits, upload size validation, video runtime limits, upload retry states" />
     </div>
+    <p class="cap" style="padding: 0; margin-bottom: 1.5rem">The validation layer: character overflow per platform, page pagination at scale, gallery and file-size limits, video runtime rules, and upload states with retry.</p>
 
     <div class="g3">
-      <div style="border-top: 2px solid var(--rd); padding-top: 1.25rem">
-        <div style="font-size: 11px; font-weight: 600; letter-spacing: 0.09em; text-transform: uppercase; color: var(--rd); margin-bottom: 0.5rem">Upload failures</div>
-        <p style="font-size: 13px; color: var(--k5); line-height: 1.6">File too large, unsupported format, or API timeout. Each error surfaces a specific, actionable message - not a generic "something went wrong." Users know exactly what to fix.</p>
+      <div class="wc">
+        <div class="wc-title">Character overflow, per platform</div>
+        <p class="wc-desc">The composer counts against Facebook, LinkedIn, and Instagram limits simultaneously. Exceed one and the error names the platform and the exact overage, before save, not after a silent truncation.</p>
       </div>
-      <div style="border-top: 2px solid var(--or); padding-top: 1.25rem">
-        <div style="font-size: 11px; font-weight: 600; letter-spacing: 0.09em; text-transform: uppercase; color: var(--or); margin-bottom: 0.5rem">Scheduling conflicts</div>
-        <p style="font-size: 13px; color: var(--k5); line-height: 1.6">When two posts are scheduled too close together on the same platform, the system flags the conflict before save - not after publish - with a one-click reschedule option.</p>
+      <div class="wc">
+        <div class="wc-title">Media validation at upload</div>
+        <p class="wc-desc">Image size capped at 5MB across all three platforms, a maximum of 10 images per gallery upload, and video runtime validated against the strictest platform in the post: 10 minutes for Facebook and LinkedIn, 1 minute when Instagram is included.</p>
       </div>
-      <div style="border-top: 2px solid var(--g); padding-top: 1.25rem">
-        <div style="font-size: 11px; font-weight: 600; letter-spacing: 0.09em; text-transform: uppercase; color: var(--gm); margin-bottom: 0.5rem">Draft preservation</div>
-        <p style="font-size: 13px; color: var(--k5); line-height: 1.6">Closing the creation modal mid-flow saves a draft automatically. Users return to exactly where they left off - no progress lost, no confirmation dialogs required.</p>
+      <div class="wc">
+        <div class="wc-title">Upload states with retry</div>
+        <p class="wc-desc">Multi-file uploads show per-file progress, time remaining, and pause. A failed file states the reason — photo size, video length, format — with a one-tap retry. One failure never blocks the rest of the batch.</p>
       </div>
     </div>
   </section>
@@ -995,30 +952,85 @@
   <hr />
 
   <!-- ═══════════════════════════════════════════
-       10  LEARNINGS
+       06  OUTCOME
   ═══════════════════════════════════════════ -->
-  <section class="s" id="learnings">
-    <div class="s-num">10 &nbsp;·&nbsp; Learnings</div>
-    <h2 class="s-title" style="margin-bottom: 1.75rem">What this project <em>taught me.</em></h2>
+  <section class="s" id="outcome">
+    <div class="s-num">06 &nbsp;·&nbsp; Outcome</div>
+    <h2 class="s-title">Benchmarked against the flow <em>it replaced.</em></h2>
+    <p class="s-lead">The same task that set the baseline was re-run on the final design in a moderated walkthrough: Prem, a Digital Marketing Manager at Dunzo Daily, connecting his Facebook pages, composing one post for three Dunzo pages, attaching creative from the media gallery, previewing per platform, and scheduling — then tracking the published campaign's impressions and interactions from the campaign list.</p>
 
-    <div class="lg-grid">
-      <div class="lc">
-        <div class="lc-n">1</div>
-        <div class="lc-title">Social platforms change. Design for adaptability.</div>
-        <p class="lc-desc">Platform specs, character limits, and media requirements shift regularly. Building the platform-specific logic as a configurable layer - not hardcoded - meant we could update for Twitter's changes without a full redeploy.</p>
+    <div class="g3" style="margin-bottom: 1.5rem">
+      <div class="wc" style="background: var(--gl); border-color: rgba(83,183,114,0.28)">
+        <div style="font-size: 26px; font-weight: 700; letter-spacing: -0.025em; color: var(--gm); line-height: 1; margin-bottom: 0.4rem">&lt;20 min</div>
+        <div class="wc-title" style="color: var(--gm)">Completion time</div>
+        <p class="wc-desc" style="color: var(--gm)">Brief to scheduled multi-page campaign in the final timed walkthrough, against the ~2 hour baseline across three tools. Performance one click from the campaign list. No exports, no spreadsheets.</p>
       </div>
-      <div class="lc">
-        <div class="lc-n">2</div>
-        <div class="lc-title">User feedback beats assumptions, every time</div>
-        <p class="lc-desc">Iteration 1 felt right in Figma. Two sessions with actual marketers surfaced the cognitive load problem the whole team had missed. Build in testing time even on tight timelines - it always pays back.</p>
+      <div class="wc">
+        <div style="font-size: 26px; font-weight: 700; letter-spacing: -0.025em; color: var(--k); line-height: 1; margin-bottom: 0.4rem">Week 3</div>
+        <div class="wc-title">Engineering handoff</div>
+        <p class="wc-desc">Approved at design review and handed to engineering with edge cases and error states specced. Shipped within the one-month window with no design rework during build.</p>
       </div>
-      <div class="lc">
-        <div class="lc-n">3</div>
-        <div class="lc-title">The wizard pattern works - until it doesn't</div>
-        <p class="lc-desc">Step-by-step flows reduce overwhelm for new users but frustrate power users who know exactly what they need. The next iteration should let experienced users skip to any step and collapse completed sections.</p>
+      <div class="wc">
+        <div style="font-size: 26px; font-weight: 700; letter-spacing: -0.025em; color: var(--k); line-height: 1; margin-bottom: 0.4rem">1 of 1</div>
+        <div class="wc-title">Designer</div>
+        <p class="wc-desc">Sole designer across research, strategy, sketches, wireframes, four high-fidelity iterations, edge cases, and handoff. Every artifact on this page was produced inside the same month.</p>
       </div>
     </div>
 
+    <div class="if hauto" style="margin-bottom: 0.5rem">
+      <img src="Case study 3 rework/connect Facebook, add pages, compose, upload media, preview per platform, schedule, track metrics.png" alt="End-to-end walkthrough: connect Facebook, add pages, compose, upload media, preview per platform, schedule, track metrics" />
+    </div>
+    <p class="cap" style="padding: 0">The full walkthrough: connect Facebook, add Dunzo pages, compose once for all pages, upload from the media gallery, preview on Facebook, LinkedIn, and Instagram, schedule, campaign published with impressions, interactions, and per-platform post review.</p>
+  </section>
+
+  <hr />
+
+  <!-- ═══════════════════════════════════════════
+       07  MOMENTS
+  ═══════════════════════════════════════════ -->
+  <section class="s" id="moments">
+    <div class="s-num">07 &nbsp;·&nbsp; Moments that shaped the product</div>
+    <h2 class="s-title">Two times the work <em>changed direction.</em></h2>
+
+    <div style="border: 1px solid var(--k2); border-radius: 14px; padding: 1.75rem; margin-bottom: 1.25rem">
+      <h3 class="split-title">The matrix found the feature nobody built</h3>
+      <p style="font-size: 13px; font-weight: 600; color: var(--k); margin-bottom: 0.6rem">Character limit validation scored zero across all six competitors.</p>
+      <p class="split-body" style="max-width: 720px; margin-bottom: 0">The teardown matrix was meant to tell us what to match. Its most useful row told us what to own: not one tool validated content against platform limits before publish. That single empty row became the per-platform character counters in the composer and an entire validation layer in the edge-case designs. The cheapest differentiator is the gap everyone shares.</p>
+    </div>
+
+    <div style="border: 1px solid var(--k2); border-radius: 14px; padding: 1.75rem">
+      <h3 class="split-title">The annotations were the roadmap</h3>
+      <p style="font-size: 13px; font-weight: 600; color: var(--k); margin-bottom: 0.6rem">Each iteration was reviewed with its failures written directly on the screen.</p>
+      <p class="split-body" style="max-width: 720px; margin-bottom: 0">"No option to switch between platforms." "Creating multiple posts needs a lot of clicks." "No live preview." Instead of vague feedback rounds, every review produced specific annotations pinned to the design, and each became the brief for the next iteration. Four iterations in three weeks was only possible because the criticism was this concrete.</p>
+    </div>
+  </section>
+
+  <hr />
+
+  <!-- ═══════════════════════════════════════════
+       08  REFLECTIONS
+  ═══════════════════════════════════════════ -->
+  <section class="s" id="reflections">
+    <div class="s-num">08 &nbsp;·&nbsp; Reflections</div>
+    <h2 class="s-title" style="margin-bottom: 1.75rem">What I'd do <em>differently.</em></h2>
+
+    <div class="lg-grid">
+      <div style="border: 1px solid var(--k2); border-radius: 14px; padding: 1.75rem">
+        <div class="lc-n">1</div>
+        <div class="lc-title">Design platform logic as a configurable layer</div>
+        <p class="lc-desc">Character limits, media caps, and video runtimes shift whenever a platform changes its rules. Keeping that logic configurable rather than hardcoded meant updates without a full redeploy. I'd push this even further from day one.</p>
+      </div>
+      <div style="border: 1px solid var(--k2); border-radius: 14px; padding: 1.75rem">
+        <div class="lc-n">2</div>
+        <div class="lc-title">Test earlier, even on tight timelines</div>
+        <p class="lc-desc">The sessions that exposed iteration 1 happened in week 2. Running them in week 1, against the sketches, would have saved a full high-fidelity pass.</p>
+      </div>
+      <div style="border: 1px solid var(--k2); border-radius: 14px; padding: 1.75rem">
+        <div class="lc-n">3</div>
+        <div class="lc-title">Design the expert path alongside the guided one</div>
+        <p class="lc-desc">The structured flow was the right call for launch, but power users who run campaigns daily need shortcuts: clone a past campaign, skip straight to scheduling. That escape hatch should have been in the v1 spec, not the backlog.</p>
+      </div>
+    </div>
   </section>
 
   <!-- ═══════════════════════════════════════════
